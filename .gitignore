@@ -3,3 +3,4 @@
 
 # built files
 /dist
+.cache
