@@ -36121,11 +36121,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var WarmingUp2 = function WarmingUp2() {
   return _react.default.createElement(_DoubleColumn.default, {
-    asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Things used in Baking 2"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", null, "Ingredients"), "Butter, eggs, milk, etc. are all pieces used to create something bigger, a cookie!"), _react.default.createElement("li", null, _react.default.createElement("b", null, "Mixer"), "All our ingredients need to be combined and mixed to make our cookie."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Events"), "Putting the cookies into the oven, setting a timer, having the timer go off."), _react.default.createElement("li", null, _react.default.createElement("b", null, "(ears to) Listen"), "You need to set a timer to know when to take the cookies out."))),
+    asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Things used in Baking"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", null, "Ingredients"), "Butter, eggs, milk, etc. are all pieces used to create something bigger, a cookie!"), _react.default.createElement("li", null, _react.default.createElement("b", null, "Mixer"), "All our ingredients need to be combined and mixed to make our cookie."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Events"), "Putting the cookies into the oven, setting a timer, having the timer go off."), _react.default.createElement("li", null, _react.default.createElement("b", null, "(ears to) Listen"), "You need to set a timer to know when to take the cookies out."))),
     prevLink: "warmingup1",
     nextLink: "warmingup3",
-    title: "Baking up Code"
-  }, _react.default.createElement("div", null, _react.default.createElement("p", null, "We\u2019re going to learn a few concepts that are building blocks for all coding."), _react.default.createElement("p", null, "We\u2019re going to compare baking to building code.")));
+    title: "Let\u2019s see how these compare to codeing"
+  }, _react.default.createElement("div", {
+    className: "compareToBox"
+  }, _react.default.createElement("h1", null, "Things used in Coding"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", null, "Body"), "Code that is needed for the computer to do something like turning on an LED."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Function"), "Takes the body and does something with it. Like a mixer, it needs to be turned on by an event."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Events"), "Something that happens from an input to the computer, like pressing a button."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Event Listeners"), "Listening for when an event happens and then making a function happen."))));
 };
 
 var _default = WarmingUp2;
@@ -38002,9 +38004,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var StyledDiv = (0, _styledComponent.styledComponent)('div', {
   '& .transitionGroup': {
-    border: '1px solid red',
-    position: 'relative',
-    zIndex: 0
+    position: 'relative'
   },
   '& .routeWrapper': {
     position: 'absolute',

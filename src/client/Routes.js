@@ -12,9 +12,7 @@ import { styledComponent } from './utils/styledComponent';
 
 const StyledDiv = styledComponent('div', {
   '& .transitionGroup': {
-      border: '1px solid red',
       position: 'relative',
-      zIndex: 0,
   },
   '& .routeWrapper': {
       position: 'absolute',
