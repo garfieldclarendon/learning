@@ -26,7 +26,18 @@ const StyledSection = styledComponent('section', {
     display: 'flex',
     fontSize: '18px',
     justifyContent: 'space-between',
+    padding: '20px',
+  },
+  '& .contentWrapper': {
+    '& p:first-of-type': {
+      marginTop: 0,
+    },
+    display: 'block',
     padding: '10px',
+    paddingTop: 0,
+  },
+  '& p': {
+    display: 'block',
   },
   '& h1': {
     breakAfter: 'always',
@@ -70,7 +81,9 @@ const DoubleColumn = ({
     <StyledSection>
       <h1>{title}</h1>
       <div className="content">
-        {children}
+        <div className="contentWrapper">
+          {children}
+        </div>
         <StyledAside>
           {asideContent}
         </StyledAside>

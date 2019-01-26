@@ -12,12 +12,16 @@ const StyledNav = styledComponent('nav', {
 });
 
 const StyledSection = styledComponent('div', {
+  '& h1': {
+    marginTop: 0,
+  },
   '& .content': {
     background: '#F9F9F9',
     borderRadius: '4px',
     boxShadow: '0px 7px 23px rgba(0, 0, 0, 0.4)',
     fontSize: '18px',
-    padding: '10px',
+    minHeight: '350px',
+    padding: '20px',
   },
   margin: '50px auto',
   width: '1000px',

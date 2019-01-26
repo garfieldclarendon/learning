@@ -5,7 +5,7 @@ import Button from '../atoms/Button'
 import { styledComponent } from '../utils/styledComponent'
 
 import 'brace/mode/java'
-import 'brace/theme/github'
+import 'brace/theme/monokai'
 
 const StyledDiv = styledComponent('section', {
   '& .ace_editor': {
@@ -37,12 +37,17 @@ class CodeEditor extends React.Component {
   render() {
     return (
       <StyledDiv>
+        <div id="ace-editor-div" />
         <AceEditor
          mode="javascript"
-         theme="github"
+         theme="monokai"
+         setReadOnly={false}
+         setHighlightActiveLine={false}
+         gotoLine={1}
          onChange={this.onChange}
-         name="UNIQUE_ID_OF_DIV"
-         setValue={this.props.code}
+         setUseWrapMode={true}
+         name="ace-editor-div"
+         defaultValue={this.props.code}
          editorProps={{$blockScrolling: true}}
        />
         {/* <ReactAce

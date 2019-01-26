@@ -2,7 +2,7 @@ import React from 'react';
 import TriColumn from '../layout/TriColumn';
 import CodeEditor from '../components/CodeEditor';
 
-const Coding1 = () => (
+const Coding3 = () => (
   <div>
     <TriColumn
       asideContent={
@@ -16,24 +16,33 @@ const Coding1 = () => (
 io.emit('turnGatesOn');
 
 io.emit('turnGatesOff');
+
+// Timer Events
+
+wait(5); // in seconds
+
+waitForInactivityThenDoSomething(() => {
+ // Something happens here
+});
           `}</pre>
         </React.Fragment>
       )
       }
-      prevLink="warmingupquiz"
-      nextLink="coding2"
-      title="First Task"
+      prevLink="coding2"
+      nextLink="coding4"
+      title="Third Task"
       centerContent={
         (
           <CodeEditor code={`socket.on('sensorTriggered', () => {
-    // Something happens here
+    io.emit('turnGatesOn');
+    wait(5);
 });`}
           />)}
     >
-      <p>The Garfield Central has installed two sensors on the tracks, one before and one after the crossing.</p>
-      <h2>How can we trigger the crossing gates before the train arrives?</h2>
-  </TriColumn>
+      <p>Hum, sometimes the gates are going up while a train is still there! We can’t have that.</p>
+      <h2>How can we get the gates to ONLY go up AFTER the train is not on the crossing?</h2>
+    </TriColumn>
   </div>
 );
 
-export default Coding1;
+export default Coding3;

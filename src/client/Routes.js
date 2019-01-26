@@ -10,8 +10,10 @@ import WarmingUp3 from './pages/WarmingUp3'
 import WarmingUp4 from './pages/WarmingUp4'
 import WarmingUpQuiz from './pages/WarmingUpQuiz'
 import Coding1 from './pages/Coding1'
-import { TransitionGroup, CSSTransition } from "react-transition-group";
-import { styledComponent } from './utils/styledComponent';
+import Coding2 from './pages/Coding2'
+import Coding3 from './pages/Coding3'
+import { TransitionGroup, CSSTransition } from "react-transition-group"
+import { styledComponent } from './utils/styledComponent'
 
 const StyledDiv = styledComponent('div', {
   '& .transitionGroup': {
@@ -61,6 +63,8 @@ const Routes = ({ location }) => (
           <Route exact path="/warmingup4" component={WarmingUp4} />
           <Route exact path="/warmingupquiz" component={WarmingUpQuiz} />
           <Route exact path="/coding1" component={Coding1} />
+          <Route exact path="/coding2" component={Coding2} />
+          <Route exact path="/coding3" component={Coding3} />
         </div>
       </CSSTransition>
     </TransitionGroup>

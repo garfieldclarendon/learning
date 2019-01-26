@@ -35883,12 +35883,16 @@ var StyledNav = (0, _styledComponent.styledComponent)('nav', {
   width: '1000px'
 });
 var StyledSection = (0, _styledComponent.styledComponent)('div', {
+  '& h1': {
+    marginTop: 0
+  },
   '& .content': {
     background: '#F9F9F9',
     borderRadius: '4px',
     boxShadow: '0px 7px 23px rgba(0, 0, 0, 0.4)',
     fontSize: '18px',
-    padding: '10px'
+    minHeight: '350px',
+    padding: '20px'
   },
   margin: '50px auto',
   width: '1000px'
@@ -35924,7 +35928,95 @@ SingleColumn.defaultProps = {
 };
 var _default = SingleColumn;
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/es/index.js","prop-types":"../../node_modules/prop-types/index.js","../atoms/Button":"atoms/Button.js","../utils/styledComponent":"utils/styledComponent.js"}],"pages/Intro.js":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/es/index.js","prop-types":"../../node_modules/prop-types/index.js","../atoms/Button":"atoms/Button.js","../utils/styledComponent":"utils/styledComponent.js"}],"../assets/img/Clock1.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _default = function _default() {
+  return _react.default.createElement("svg", {
+    width: "240",
+    height: "240",
+    viewBox: "0 0 240 240",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, _react.default.createElement("path", {
+    d: "M120.3 240C186.353 240 239.9 186.453 239.9 120.4C239.9 54.3468 186.353 0.800049 120.3 0.800049C54.2468 0.800049 0.700012 54.3468 0.700012 120.4C0.700012 186.453 54.2468 240 120.3 240Z",
+    fill: "#EA8242"
+  }), _react.default.createElement("path", {
+    d: "M120.3 219.2C174.866 219.2 219.1 174.966 219.1 120.4C219.1 65.8343 174.866 21.6 120.3 21.6C65.7343 21.6 21.5 65.8343 21.5 120.4C21.5 174.966 65.7343 219.2 120.3 219.2Z",
+    fill: "#FBCE59"
+  }), _react.default.createElement("path", {
+    d: "M120.3 48.7C124.718 48.7 128.3 45.1183 128.3 40.7C128.3 36.2817 124.718 32.7 120.3 32.7C115.882 32.7 112.3 36.2817 112.3 40.7C112.3 45.1183 115.882 48.7 120.3 48.7Z",
+    fill: "#978E80"
+  }), _react.default.createElement("path", {
+    d: "M120.3 208.1C124.718 208.1 128.3 204.518 128.3 200.1C128.3 195.682 124.718 192.1 120.3 192.1C115.882 192.1 112.3 195.682 112.3 200.1C112.3 204.518 115.882 208.1 120.3 208.1Z",
+    fill: "#978E80"
+  }), _react.default.createElement("path", {
+    d: "M69.6826 69.7617C72.8068 66.6375 72.8068 61.5722 69.6826 58.4481C66.5585 55.3239 61.4932 55.3239 58.369 58.4481C55.2449 61.5722 55.2449 66.6375 58.369 69.7617C61.4932 72.8858 66.5585 72.8858 69.6826 69.7617Z",
+    fill: "#978E80"
+  }), _react.default.createElement("path", {
+    d: "M182.33 182.345C185.454 179.221 185.454 174.155 182.33 171.031C179.205 167.907 174.14 167.907 171.016 171.031C167.892 174.155 167.892 179.221 171.016 182.345C174.14 185.469 179.205 185.469 182.33 182.345Z",
+    fill: "#978E80"
+  }), _react.default.createElement("path", {
+    d: "M40.7 128.4C45.1183 128.4 48.7 124.818 48.7 120.4C48.7 115.982 45.1183 112.4 40.7 112.4C36.2817 112.4 32.7 115.982 32.7 120.4C32.7 124.818 36.2817 128.4 40.7 128.4Z",
+    fill: "#978E80"
+  }), _react.default.createElement("path", {
+    d: "M200 128.4C204.418 128.4 208 124.818 208 120.4C208 115.982 204.418 112.4 200 112.4C195.582 112.4 192 115.982 192 120.4C192 124.818 195.582 128.4 200 128.4Z",
+    fill: "#978E80"
+  }), _react.default.createElement("path", {
+    d: "M69.6438 182.377C72.768 179.252 72.768 174.187 69.6438 171.063C66.5196 167.939 61.4544 167.939 58.3302 171.063C55.206 174.187 55.206 179.252 58.3302 182.377C61.4544 185.501 66.5196 185.501 69.6438 182.377Z",
+    fill: "#978E80"
+  }), _react.default.createElement("path", {
+    d: "M182.368 69.7297C185.493 66.6056 185.493 61.5403 182.368 58.4161C179.244 55.292 174.179 55.292 171.055 58.4161C167.931 61.5403 167.931 66.6056 171.055 69.7297C174.179 72.8539 179.244 72.8539 182.368 69.7297Z",
+    fill: "#978E80"
+  }), _react.default.createElement("path", {
+    d: "M120.3 139.7C117 139.7 114.4 137 114.4 133.8V64.4C114.4 61.1 117.1 58.5 120.3 58.5C123.6 58.5 126.2 61.2 126.2 64.4V133.8C126.3 137.1 123.6 139.7 120.3 139.7Z",
+    fill: "#978E80"
+  }), _react.default.createElement("path", {
+    d: "M101.7 119.7C101.7 116.4 104.4 113.8 107.6 113.8H163.2C166.5 113.8 169.1 116.5 169.1 119.7C169.1 123 166.4 125.6 163.2 125.6H107.6C104.4 125.6 101.7 123 101.7 119.7Z",
+    fill: "#978E80"
+  }), _react.default.createElement("path", {
+    d: "M120.3 133.1C127.314 133.1 133 127.414 133 120.4C133 113.386 127.314 107.7 120.3 107.7C113.286 107.7 107.6 113.386 107.6 120.4C107.6 127.414 113.286 133.1 120.3 133.1Z",
+    fill: "#EA8242"
+  }));
+};
+
+exports.default = _default;
+},{"react":"../../node_modules/react/index.js"}],"../assets/img/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Clock = _interopRequireDefault(require("./Clock1"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Icon = function Icon(props) {
+  switch (props.name) {
+    case "clock1":
+      return _react.default.createElement(_Clock.default, props);
+
+    default:
+      return _react.default.createElement("div", null);
+  }
+};
+
+var _default = Icon;
+exports.default = _default;
+},{"react":"../../node_modules/react/index.js","./Clock1":"../assets/img/Clock1.js"}],"pages/Intro.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35940,21 +36032,29 @@ var _SingleColumn = _interopRequireDefault(require("../layout/SingleColumn"));
 
 var _Button = _interopRequireDefault(require("../atoms/Button"));
 
+var _img = _interopRequireDefault(require("../../assets/img"));
+
+var _styledComponent = require("../utils/styledComponent");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var ImageWrapper = (0, _styledComponent.styledComponent)('div', {
+  float: 'right',
+  marginRight: 150
+});
+
 var Intro = function Intro() {
-  return _react.default.createElement("div", null, _react.default.createElement(_SingleColumn.default, {
+  return _react.default.createElement(_SingleColumn.default, {
+    nextLink: "sentencesofprograming",
     title: "Welcome"
-  }, _react.default.createElement("h1", null, "Welcome"), _react.default.createElement("p", null, "Please wait to click continue."), _react.default.createElement(_reactRouterDom.Link, {
-    to: "sentencesofprograming"
-  }, _react.default.createElement(_Button.default, {
-    text: "Continue"
-  }))));
+  }, _react.default.createElement("h1", null, "Welcome"), _react.default.createElement(ImageWrapper, null, _react.default.createElement(_img.default, {
+    name: "clock1"
+  })), _react.default.createElement("p", null, "While we setting up, please wait. Once told, click continue."));
 };
 
 var _default = Intro;
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/es/index.js","../layout/SingleColumn":"layout/SingleColumn.js","../atoms/Button":"atoms/Button.js"}],"layout/DoubleColumn.js":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/es/index.js","../layout/SingleColumn":"layout/SingleColumn.js","../atoms/Button":"atoms/Button.js","../../assets/img":"../assets/img/index.js","../utils/styledComponent":"utils/styledComponent.js"}],"layout/DoubleColumn.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35996,7 +36096,18 @@ var StyledSection = (0, _styledComponent.styledComponent)('section', {
     display: 'flex',
     fontSize: '18px',
     justifyContent: 'space-between',
-    padding: '10px'
+    padding: '20px'
+  },
+  '& .contentWrapper': {
+    '& p:first-of-type': {
+      marginTop: 0
+    },
+    display: 'block',
+    padding: '10px',
+    paddingTop: 0
+  },
+  '& p': {
+    display: 'block'
   },
   '& h1': {
     breakAfter: 'always'
@@ -36035,7 +36146,9 @@ var DoubleColumn = function DoubleColumn(_ref) {
       title = _ref.title;
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(StyledSection, null, _react.default.createElement("h1", null, title), _react.default.createElement("div", {
     className: "content"
-  }, children, _react.default.createElement(StyledAside, null, asideContent))), _react.default.createElement(StyledNav, null, prevLink && _react.default.createElement(_reactRouterDom.Link, {
+  }, _react.default.createElement("div", {
+    className: "contentWrapper"
+  }, children), _react.default.createElement(StyledAside, null, asideContent))), _react.default.createElement(StyledNav, null, prevLink && _react.default.createElement(_reactRouterDom.Link, {
     to: prevLink
   }, _react.default.createElement(_Button.default, {
     text: "Previous"
@@ -64673,109 +64786,111 @@ oop.inherits(Mode, JavaScriptMode);
 exports.Mode = Mode;
 });
 
-},{"../worker/javascript":"../../node_modules/brace/worker/javascript.js"}],"../../node_modules/brace/theme/github.js":[function(require,module,exports) {
-ace.define("ace/theme/github",["require","exports","module","ace/lib/dom"], function(acequire, exports, module) {
+},{"../worker/javascript":"../../node_modules/brace/worker/javascript.js"}],"../../node_modules/brace/theme/monokai.js":[function(require,module,exports) {
+ace.define("ace/theme/monokai",["require","exports","module","ace/lib/dom"], function(acequire, exports, module) {
 
-exports.isDark = false;
-exports.cssClass = "ace-github";
-exports.cssText = "\
-.ace-github .ace_gutter {\
-background: #e8e8e8;\
-color: #AAA;\
+exports.isDark = true;
+exports.cssClass = "ace-monokai";
+exports.cssText = ".ace-monokai .ace_gutter {\
+background: #2F3129;\
+color: #8F908A\
 }\
-.ace-github  {\
-background: #fff;\
-color: #000;\
-}\
-.ace-github .ace_keyword {\
-font-weight: bold;\
-}\
-.ace-github .ace_string {\
-color: #D14;\
-}\
-.ace-github .ace_variable.ace_class {\
-color: teal;\
-}\
-.ace-github .ace_constant.ace_numeric {\
-color: #099;\
-}\
-.ace-github .ace_constant.ace_buildin {\
-color: #0086B3;\
-}\
-.ace-github .ace_support.ace_function {\
-color: #0086B3;\
-}\
-.ace-github .ace_comment {\
-color: #998;\
-font-style: italic;\
-}\
-.ace-github .ace_variable.ace_language  {\
-color: #0086B3;\
-}\
-.ace-github .ace_paren {\
-font-weight: bold;\
-}\
-.ace-github .ace_boolean {\
-font-weight: bold;\
-}\
-.ace-github .ace_string.ace_regexp {\
-color: #009926;\
-font-weight: normal;\
-}\
-.ace-github .ace_variable.ace_instance {\
-color: teal;\
-}\
-.ace-github .ace_constant.ace_language {\
-font-weight: bold;\
-}\
-.ace-github .ace_cursor {\
-color: black;\
-}\
-.ace-github.ace_focus .ace_marker-layer .ace_active-line {\
-background: rgb(255, 255, 204);\
-}\
-.ace-github .ace_marker-layer .ace_active-line {\
-background: rgb(245, 245, 245);\
-}\
-.ace-github .ace_marker-layer .ace_selection {\
-background: rgb(181, 213, 255);\
-}\
-.ace-github.ace_multiselect .ace_selection.ace_start {\
-box-shadow: 0 0 3px 0px white;\
-}\
-.ace-github.ace_nobold .ace_line > span {\
-font-weight: normal !important;\
-}\
-.ace-github .ace_marker-layer .ace_step {\
-background: rgb(252, 255, 0);\
-}\
-.ace-github .ace_marker-layer .ace_stack {\
-background: rgb(164, 229, 101);\
-}\
-.ace-github .ace_marker-layer .ace_bracket {\
-margin: -1px 0 0 -1px;\
-border: 1px solid rgb(192, 192, 192);\
-}\
-.ace-github .ace_gutter-active-line {\
-background-color : rgba(0, 0, 0, 0.07);\
-}\
-.ace-github .ace_marker-layer .ace_selected-word {\
-background: rgb(250, 250, 255);\
-border: 1px solid rgb(200, 200, 250);\
-}\
-.ace-github .ace_invisible {\
-color: #BFBFBF\
-}\
-.ace-github .ace_print-margin {\
+.ace-monokai .ace_print-margin {\
 width: 1px;\
-background: #e8e8e8;\
+background: #555651\
 }\
-.ace-github .ace_indent-guide {\
-background: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==\") right repeat-y;\
+.ace-monokai {\
+background-color: #272822;\
+color: #F8F8F2\
+}\
+.ace-monokai .ace_cursor {\
+color: #F8F8F0\
+}\
+.ace-monokai .ace_marker-layer .ace_selection {\
+background: #49483E\
+}\
+.ace-monokai.ace_multiselect .ace_selection.ace_start {\
+box-shadow: 0 0 3px 0px #272822;\
+}\
+.ace-monokai .ace_marker-layer .ace_step {\
+background: rgb(102, 82, 0)\
+}\
+.ace-monokai .ace_marker-layer .ace_bracket {\
+margin: -1px 0 0 -1px;\
+border: 1px solid #49483E\
+}\
+.ace-monokai .ace_marker-layer .ace_active-line {\
+background: #202020\
+}\
+.ace-monokai .ace_gutter-active-line {\
+background-color: #272727\
+}\
+.ace-monokai .ace_marker-layer .ace_selected-word {\
+border: 1px solid #49483E\
+}\
+.ace-monokai .ace_invisible {\
+color: #52524d\
+}\
+.ace-monokai .ace_entity.ace_name.ace_tag,\
+.ace-monokai .ace_keyword,\
+.ace-monokai .ace_meta.ace_tag,\
+.ace-monokai .ace_storage {\
+color: #F92672\
+}\
+.ace-monokai .ace_punctuation,\
+.ace-monokai .ace_punctuation.ace_tag {\
+color: #fff\
+}\
+.ace-monokai .ace_constant.ace_character,\
+.ace-monokai .ace_constant.ace_language,\
+.ace-monokai .ace_constant.ace_numeric,\
+.ace-monokai .ace_constant.ace_other {\
+color: #AE81FF\
+}\
+.ace-monokai .ace_invalid {\
+color: #F8F8F0;\
+background-color: #F92672\
+}\
+.ace-monokai .ace_invalid.ace_deprecated {\
+color: #F8F8F0;\
+background-color: #AE81FF\
+}\
+.ace-monokai .ace_support.ace_constant,\
+.ace-monokai .ace_support.ace_function {\
+color: #66D9EF\
+}\
+.ace-monokai .ace_fold {\
+background-color: #A6E22E;\
+border-color: #F8F8F2\
+}\
+.ace-monokai .ace_storage.ace_type,\
+.ace-monokai .ace_support.ace_class,\
+.ace-monokai .ace_support.ace_type {\
+font-style: italic;\
+color: #66D9EF\
+}\
+.ace-monokai .ace_entity.ace_name.ace_function,\
+.ace-monokai .ace_entity.ace_other,\
+.ace-monokai .ace_entity.ace_other.ace_attribute-name,\
+.ace-monokai .ace_variable {\
+color: #A6E22E\
+}\
+.ace-monokai .ace_variable.ace_parameter {\
+font-style: italic;\
+color: #FD971F\
+}\
+.ace-monokai .ace_string {\
+color: #E6DB74\
+}\
+.ace-monokai .ace_comment {\
+color: #75715E\
+}\
+.ace-monokai .ace_indent-guide {\
+background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgNeAAAAAElFTkSuQmCC) right repeat-y\
 }";
 
-    var dom = acequire("../lib/dom");
-    dom.importCssString(exports.cssText, exports.cssClass);
+var dom = acequire("../lib/dom");
+dom.importCssString(exports.cssText, exports.cssClass);
 });
 
 },{}],"components/CodeEditor.js":[function(require,module,exports) {
@@ -64798,7 +64913,7 @@ var _styledComponent = require("../utils/styledComponent");
 
 require("brace/mode/java");
 
-require("brace/theme/github");
+require("brace/theme/monokai");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -64862,12 +64977,18 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react.default.createElement(StyledDiv, null, _react.default.createElement(_reactAce.default, {
+      return _react.default.createElement(StyledDiv, null, _react.default.createElement("div", {
+        id: "ace-editor-div"
+      }), _react.default.createElement(_reactAce.default, {
         mode: "javascript",
-        theme: "github",
+        theme: "monokai",
+        setReadOnly: false,
+        setHighlightActiveLine: false,
+        gotoLine: 1,
         onChange: this.onChange,
-        name: "UNIQUE_ID_OF_DIV",
-        setValue: this.props.code,
+        setUseWrapMode: true,
+        name: "ace-editor-div",
+        defaultValue: this.props.code,
         editorProps: {
           $blockScrolling: true
         }
@@ -64883,7 +65004,7 @@ function (_React$Component) {
 
 var _default = CodeEditor;
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","brace":"../../node_modules/brace/index.js","react-ace":"../../node_modules/react-ace/lib/index.js","../atoms/Button":"atoms/Button.js","../utils/styledComponent":"utils/styledComponent.js","brace/mode/java":"../../node_modules/brace/mode/java.js","brace/theme/github":"../../node_modules/brace/theme/github.js"}],"pages/Coding1.js":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","brace":"../../node_modules/brace/index.js","react-ace":"../../node_modules/react-ace/lib/index.js","../atoms/Button":"atoms/Button.js","../utils/styledComponent":"utils/styledComponent.js","brace/mode/java":"../../node_modules/brace/mode/java.js","brace/theme/monokai":"../../node_modules/brace/theme/monokai.js"}],"pages/Coding1.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -64903,7 +65024,7 @@ var Coding1 = function Coding1() {
   return _react.default.createElement("div", null, _react.default.createElement(_TriColumn.default, {
     asideContent: _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("h1", null, "Code Example Bank"), _react.default.createElement("pre", null, "socket.on('sensorTriggered', () => {\n    // Something happens here whenever any sensor is triggered\n});\n\nio.emit('turnGatesOn');\n\nio.emit('turnGatesOff');\n          ")),
     prevLink: "warmingupquiz",
-    nextLink: "code2",
+    nextLink: "coding2",
     title: "First Task",
     centerContent: _react.default.createElement(_CodeEditor.default, {
       code: "socket.on('sensorTriggered', () => {\n    // Something happens here\n});"
@@ -64912,6 +65033,66 @@ var Coding1 = function Coding1() {
 };
 
 var _default = Coding1;
+exports.default = _default;
+},{"react":"../../node_modules/react/index.js","../layout/TriColumn":"layout/TriColumn.js","../components/CodeEditor":"components/CodeEditor.js"}],"pages/Coding2.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _TriColumn = _interopRequireDefault(require("../layout/TriColumn"));
+
+var _CodeEditor = _interopRequireDefault(require("../components/CodeEditor"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Coding2 = function Coding2() {
+  return _react.default.createElement("div", null, _react.default.createElement(_TriColumn.default, {
+    asideContent: _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("h1", null, "Code Example Bank"), _react.default.createElement("pre", null, "socket.on('sensorTriggered', () => {\n    // Something happens here whenever any sensor is triggered\n  });\n\n  io.emit('turnGatesOn');\n\n  io.emit('turnGatesOff');\n\n  // Timer Events\n\n  wait(5); // in seconds\n          ")),
+    prevLink: "coding1",
+    nextLink: "coding3",
+    title: "Second Task",
+    centerContent: _react.default.createElement(_CodeEditor.default, {
+      code: "socket.on('sensorTriggered', () => {\n    io.emit('turnGatesOn');\n  });"
+    })
+  }, _react.default.createElement("p", null, "Uh oh! Drivers are reporting that the gates are never going up!"), _react.default.createElement("h2", null, "How can we get the gates and lights to go up after the train has left?")));
+};
+
+var _default = Coding2;
+exports.default = _default;
+},{"react":"../../node_modules/react/index.js","../layout/TriColumn":"layout/TriColumn.js","../components/CodeEditor":"components/CodeEditor.js"}],"pages/Coding3.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _TriColumn = _interopRequireDefault(require("../layout/TriColumn"));
+
+var _CodeEditor = _interopRequireDefault(require("../components/CodeEditor"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Coding3 = function Coding3() {
+  return _react.default.createElement("div", null, _react.default.createElement(_TriColumn.default, {
+    asideContent: _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("h1", null, "Code Example Bank"), _react.default.createElement("pre", null, "socket.on('sensorTriggered', () => {\n    // Something happens here whenever any sensor is triggered\n});\n\nio.emit('turnGatesOn');\n\nio.emit('turnGatesOff');\n\n// Timer Events\n\nwait(5); // in seconds\n\nwaitForInactivityThenDoSomething(() => {\n // Something happens here\n});\n          ")),
+    prevLink: "coding2",
+    nextLink: "coding4",
+    title: "Third Task",
+    centerContent: _react.default.createElement(_CodeEditor.default, {
+      code: "socket.on('sensorTriggered', () => {\n    io.emit('turnGatesOn');\n    wait(5);\n});"
+    })
+  }, _react.default.createElement("p", null, "Hum, sometimes the gates are going up while a train is still there! We can\u2019t have that."), _react.default.createElement("h2", null, "How can we get the gates to ONLY go up AFTER the train is not on the crossing?")));
+};
+
+var _default = Coding3;
 exports.default = _default;
 },{"react":"../../node_modules/react/index.js","../layout/TriColumn":"layout/TriColumn.js","../components/CodeEditor":"components/CodeEditor.js"}],"../../node_modules/@babel/runtime/helpers/interopRequireDefault.js":[function(require,module,exports) {
 function _interopRequireDefault(obj) {
@@ -66733,6 +66914,10 @@ var _WarmingUpQuiz = _interopRequireDefault(require("./pages/WarmingUpQuiz"));
 
 var _Coding = _interopRequireDefault(require("./pages/Coding1"));
 
+var _Coding2 = _interopRequireDefault(require("./pages/Coding2"));
+
+var _Coding3 = _interopRequireDefault(require("./pages/Coding3"));
+
 var _reactTransitionGroup = require("react-transition-group");
 
 var _styledComponent = require("./utils/styledComponent");
@@ -66818,13 +67003,21 @@ var Routes = function Routes(_ref) {
     exact: true,
     path: "/coding1",
     component: _Coding.default
+  }), _react.default.createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: "/coding2",
+    component: _Coding2.default
+  }), _react.default.createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: "/coding3",
+    component: _Coding3.default
   })))));
 };
 
 var _default = (0, _reactRouterDom.withRouter)(Routes);
 
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","glamorous":"../../node_modules/glamorous/dist/glamorous.esm.js","react-router-dom":"../../node_modules/react-router-dom/es/index.js","./pages/Intro":"pages/Intro.js","./pages/Syntax":"pages/Syntax.js","./pages/Sentences":"pages/Sentences.js","./pages/WarmingUp1":"pages/WarmingUp1.js","./pages/WarmingUp2":"pages/WarmingUp2.js","./pages/WarmingUp3":"pages/WarmingUp3.js","./pages/WarmingUp4":"pages/WarmingUp4.js","./pages/WarmingUpQuiz":"pages/WarmingUpQuiz.js","./pages/Coding1":"pages/Coding1.js","react-transition-group":"../../node_modules/react-transition-group/index.js","./utils/styledComponent":"utils/styledComponent.js"}],"index.js":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","glamorous":"../../node_modules/glamorous/dist/glamorous.esm.js","react-router-dom":"../../node_modules/react-router-dom/es/index.js","./pages/Intro":"pages/Intro.js","./pages/Syntax":"pages/Syntax.js","./pages/Sentences":"pages/Sentences.js","./pages/WarmingUp1":"pages/WarmingUp1.js","./pages/WarmingUp2":"pages/WarmingUp2.js","./pages/WarmingUp3":"pages/WarmingUp3.js","./pages/WarmingUp4":"pages/WarmingUp4.js","./pages/WarmingUpQuiz":"pages/WarmingUpQuiz.js","./pages/Coding1":"pages/Coding1.js","./pages/Coding2":"pages/Coding2.js","./pages/Coding3":"pages/Coding3.js","react-transition-group":"../../node_modules/react-transition-group/index.js","./utils/styledComponent":"utils/styledComponent.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -66867,7 +67060,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54414" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58691" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
