@@ -31,8 +31,8 @@ timer go off.
       </div>
     )
   }
-    prevLink="syntax"
-    nextLink="core2"
+    prevLink="warmingup3"
+    nextLink="warmingupquiz"
     title="Baking up Code"
   >
     <div>

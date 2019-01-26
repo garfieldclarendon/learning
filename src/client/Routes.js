@@ -3,10 +3,13 @@ import glamorous from 'glamorous'
 import { Route, withRouter } from 'react-router-dom'
 import Intro from './pages/Intro'
 import Syntax from './pages/Syntax'
+import Sentences from './pages/Sentences'
 import WarmingUp1 from './pages/WarmingUp1'
 import WarmingUp2 from './pages/WarmingUp2'
 import WarmingUp3 from './pages/WarmingUp3'
 import WarmingUp4 from './pages/WarmingUp4'
+import WarmingUpQuiz from './pages/WarmingUpQuiz'
+import Coding1 from './pages/Coding1'
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { styledComponent } from './utils/styledComponent';
 
@@ -50,11 +53,14 @@ const Routes = ({ location }) => (
       >
         <div className="routeWrapper">
           <Route exact path="/intro" component={Intro} />
+          <Route exact path="/sentencesofprograming" component={Sentences} />
           <Route exact path="/syntax" component={Syntax} />
           <Route exact path="/warmingup1" component={WarmingUp1} />
           <Route exact path="/warmingup2" component={WarmingUp2} />
           <Route exact path="/warmingup3" component={WarmingUp3} />
           <Route exact path="/warmingup4" component={WarmingUp4} />
+          <Route exact path="/warmingupquiz" component={WarmingUpQuiz} />
+          <Route exact path="/coding1" component={Coding1} />
         </div>
       </CSSTransition>
     </TransitionGroup>

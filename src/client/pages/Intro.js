@@ -8,7 +8,7 @@ const Intro = () => (
     <SingleColumn title="Welcome">
       <h1>Welcome</h1>
       <p>Please wait to click continue.</p>
-      <Link to="syntax">
+      <Link to="sentencesofprograming">
         <Button text="Continue" />
       </Link>
     </SingleColumn>
