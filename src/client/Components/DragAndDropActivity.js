@@ -30,6 +30,15 @@ const StyledSection = styledComponent('section', {
     verticalAlign: 'middle',
     width: '80px',
   },
+  '& header': {
+    '& h2': {
+      marginBottom: '5px',
+    },
+    '& svg': {
+      marginRight: '10px',
+    },
+    display: 'flex',
+  },
   '& .dragging': {
     opacity: 0.4,
     // animation: `${bounce} 1s ease infinite`,
@@ -76,8 +85,10 @@ const Sentences = () => {
     <StyledSection>
       <header>
         <Icon width="100px" name="personTallHair" />
-        <h2>Help James build a program</h2>
-        <p>Drag the pieces of code into the proper spot to build a program.</p>
+        <div>
+          <h2>Help James build a program</h2>
+          <p>Drag the pieces of code into the proper spot to build a program.</p>
+        </div>
       </header>
       <div className="contentArea">
         <div className="blockWrapper">
