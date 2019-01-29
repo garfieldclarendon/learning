@@ -46,6 +46,8 @@ const SingleColumn = ({
           <Button text="Previous" />
         </Link>
       )}
+      {/* In order to get the next button to display in the right spot we need a blank element  */}
+      {!prevLink && <div />}
       {nextLink && (
         <Link to={nextLink}>
           <Button text="Next" />

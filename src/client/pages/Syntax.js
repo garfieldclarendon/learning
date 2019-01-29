@@ -1,5 +1,6 @@
 import React from 'react';
 import DoubleColumn from '../layout/DoubleColumn';
+import Icon from '../../assets/img'
 
 const Syntax = () => {
   return (
@@ -8,7 +9,7 @@ const Syntax = () => {
       asideContent={
       (
         <div>
-         PIC HERE
+         <Icon width="400px" name="syntax" />
         </div>
       )
     }

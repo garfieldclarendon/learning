@@ -12,7 +12,7 @@ const ImageWrapper = styledComponent('div', {
 
 const Intro = () => (
   <SingleColumn
-    nextLink="sentencesofprograming"
+    nextLink="ourlesson"
     title="Welcome"
   >
     <h1>Welcome</h1>
@@ -20,6 +20,7 @@ const Intro = () => (
       <Icon name="clock1" />
     </ImageWrapper>
     <p>While we setting up, please wait. Once told, click continue.</p>
+    <small><a href="https://www.vecteezy.com/">Graphics by: www.vecteezy.com</a></small>
   </SingleColumn>
 );
 
