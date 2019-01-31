@@ -7,7 +7,7 @@ import { styledComponent } from '../utils/styledComponent'
 
 const ImageWrapper = styledComponent('div', {
   float: 'right',
-  marginRight: 150
+  marginRight: 120
 });
 
 const Intro = () => (

@@ -13,6 +13,7 @@ import Coding1 from './pages/Coding1'
 import Coding2 from './pages/Coding2'
 import Coding3 from './pages/Coding3'
 import OurLesson from './pages/OurLesson'
+import CrossingSaftey from './pages/CrossingSaftey'
 import { TransitionGroup, CSSTransition } from "react-transition-group"
 import { styledComponent } from './utils/styledComponent'
 
@@ -56,6 +57,7 @@ const Routes = ({ location }) => (
       >
         <div className="routeWrapper">
           <Route exact path="/intro" component={Intro} />
+          <Route exact path="/crossingsaftey" component={CrossingSaftey} />
           <Route exact path="/sentencesofprograming" component={Sentences} />
           <Route exact path="/syntax" component={Syntax} />
           <Route exact path="/warmingup1" component={WarmingUp1} />

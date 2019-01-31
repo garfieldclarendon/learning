@@ -13,8 +13,8 @@ const OurLesson = () => {
         </div>
       )
     }
-      prevLink="intro"
-      nextLink="sentencesofprograming"
+      prevLink="ourlesson"
+      nextLink="crossingsaftey"
       title="Georgetown Department of Public Works"
     >
       <p>Congratulations! You've been placed on the City of Georgetown's Department of Transportation.</p>
