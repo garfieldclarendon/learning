@@ -3,6 +3,10 @@ import Icon from '../../assets/img'
 import glamorous from 'glamorous';
 import * as glamor from 'glamor';
 import { styledComponent } from '../utils/styledComponent'
+import Card from './Card'
+import CardTarget from './CardTarget'
+import HTML5Backend from 'react-dnd-html5-backend'
+import { DragDropContext } from 'react-dnd'
 
 const bounce = glamor.css.keyframes({
   '0%, 100%': {
@@ -92,6 +96,8 @@ const Sentences = () => {
       </header>
       <div className="contentArea">
         <div className="blockWrapper">
+          <Card color="red" />
+          <CardTarget />
           <div id="item1" className="block" draggable="true" onDragStart={dragWord}>()</div>
           <div id="item2" className="block" draggable="true" onDragStart={dragWord}>=></div>
           <div id="item3" className="block" draggable="true" onDragStart={dragWord}>makeCookies</div>
@@ -107,4 +113,4 @@ const Sentences = () => {
     </StyledSection>
   )};
 
-  export default Sentences;
+  export default DragDropContext(HTML5Backend)(Sentences);
