@@ -1,4 +1,5 @@
 import React from 'react'
+import Barrier from './Barrier'
 import Clock1 from './Clock1'
 import PeopleCollage from './PeopleCollage'
 import Georgetown from './Georgetown'
@@ -8,13 +9,18 @@ import Syntax from './Syntax'
 import Cook from './Cook'
 import Mixer from './Mixer'
 import TallHair from './people/TallHair'
+import Crossing from './Crossing'
 
 const Icon = props => {
   switch(props.name) {
+    case "barrier":
+      return <Barrier {...props} />;
     case "clock1":
       return <Clock1 {...props} />;
     case "cook":
       return <Cook {...props} />;
+    case "crossing":
+      return <Crossing {...props} />;
     case "gcmrr":
       return <GCMRR {...props} />;
     case "georgetown":

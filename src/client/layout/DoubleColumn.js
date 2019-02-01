@@ -56,6 +56,9 @@ const StyledAside = styledComponent('aside', {
   '& li': {
     marginBottom: '10px',
   },
+  '& h1, & h2, & h3': {
+    color: '#3F301D',
+  },
   background: '#F4E7D8',
   color: '#3F301D',
   fontSize: '14px',
