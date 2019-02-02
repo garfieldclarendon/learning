@@ -5,10 +5,10 @@ import SortActivity from '../Components/SortActivity';
 
 const activityData = {
   tasks: {
-    'task-1': { id: 'task-1', content: 'Feed Froggy'},
-    'task-2': { id: 'task-2', content: 'Walk Dino'},
-    'task-3': { id: 'task-3', content: 'Print Fishy Pecos'},
-    'task-4': { id: 'task-4', content: 'Hug Sherbert'},
+    'task-1': { id: 'task-1', content: 'make'},
+    'task-2': { id: 'task-2', content: 'Cookies'},
+    'task-3': { id: 'task-3', content: '()'},
+    'task-4': { id: 'task-4', content: ';'},
   },
   columns: {
     'column1': {
