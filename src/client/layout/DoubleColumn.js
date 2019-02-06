@@ -42,7 +42,7 @@ const StyledSection = styledComponent('section', {
   '& h1': {
     breakAfter: 'always',
   },
-  margin: '50px auto',
+  margin: '20px auto',
   width: '1000px',
 });
 
@@ -69,7 +69,7 @@ const StyledAside = styledComponent('aside', {
 const StyledNav = styledComponent('nav', {
   display: 'flex',
   justifyContent: 'space-between',
-  margin: '50px auto',
+  margin: '20px auto',
   width: '1000px',
 });
 

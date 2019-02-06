@@ -13,7 +13,7 @@ const OurLesson = () => {
         </div>
       )
     }
-      prevLink="ourlesson"
+      prevLink="intro"
       nextLink="crossingsaftey"
       title="Georgetown Department of Public Works"
     >

@@ -7,7 +7,7 @@ import { styledComponent } from '../utils/styledComponent';
 const StyledNav = styledComponent('nav', {
   display: 'flex',
   justifyContent: 'space-between',
-  margin: '50px auto',
+  margin: '20px auto',
   width: '1000px',
 });
 
@@ -23,7 +23,7 @@ const StyledSection = styledComponent('div', {
     minHeight: '350px',
     padding: '20px',
   },
-  margin: '50px auto',
+  margin: '20px auto',
   width: '1000px',
 });
 

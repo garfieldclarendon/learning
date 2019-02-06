@@ -30,6 +30,7 @@ const Answers = styledComponent('ul', {
   '& li.visible span': {
     opacity: 1,
   },
+  marginTop: '5px',
   width: '300px'
 });
 
@@ -71,32 +72,32 @@ const ImageWrapper = styledComponent('div', {
     '& #crossingBuckHS': {
       left: '320px',
       height: '60px',
-      top: '345px',
+      top: '205px',
       width: '60px',
     },
     '& #crossingGateHS': {
       left: '270px',
       height: '50px',
-      top: '385px',
+      top: '235px',
       width: '60px',
     },
     '& #crossingLightsHS': {
       left: '320px',
       height: '20px',
-      top: '410px',
+      top: '260px',
       width: '50px',
     },
     '& #crossingSignHS': {
       left: '260px',
       height: '30px',
-      top: '450px',
+      top: '300px',
       width: '30px',
     },
     '& #crossingBarrierHS': {
       left: '530px',
       height: '90px',
       transform: 'rotate(60deg)',
-      top: '236px',
+      top: '86px',
       width: '20px',
     },
     '& div': {
@@ -113,19 +114,19 @@ const ImageWrapper = styledComponent('div', {
   '& .barrier': {
     left: '510px',
     position: 'absolute',
-    top: '250px',
+    top: '100px',
     zIndex: 1,
   },
   '& .crossbuck': {
     left: '324px',
     position: 'absolute',
-    top: '355px',
+    top: '205px',
     zIndex: 1,
   },
   '& .crossingSign': {
     left: '260px',
     position: 'absolute',
-    top: '450px',
+    top: '300px',
     zIndex: 1,
   },
   '& :hover': {
@@ -160,6 +161,11 @@ export default class CrossingSaftey extends React.Component {
 
     answerAnimation[answerNumber[1]] = 'selected'
     this.setState({selected: answerAnimation})
+
+    window.setTimeout(() => {
+      answerAnimation[answerNumber[1]] = '';
+      this.setState({selected: answerAnimation});
+    }, 300);
 
     if (Object.values(answers).indexOf(false) === -1) {
       this.setState({
@@ -205,7 +211,6 @@ export default class CrossingSaftey extends React.Component {
         <img width="600" src={railroadCrossing} alt="railroad crossing"/>
       </ImageWrapper>
       <Header>
-        <h2>Answers</h2>
         <h3 className={`inst ${this.state.initial}`}>Click image to find answers</h3>
         <h3 className={`youWon ${this.state.done}`}>Congrats! You found them all!</h3>
       </Header>
