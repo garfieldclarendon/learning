@@ -2,6 +2,7 @@ import React from 'react'
 import brace from 'brace'
 import AceEditor from 'react-ace'
 import Button from '../atoms/Button'
+import ReactModal from 'react-modal'
 import { styledComponent } from '../utils/styledComponent'
 
 import 'brace/mode/java'
@@ -24,6 +25,20 @@ class CodeEditor extends React.Component {
   constructor() {
     super();
     this.onChange = this.onChange.bind(this);
+    this.state = {
+      modalOpen: false,
+    }
+  }
+
+  handleCloseModal() {
+    console.log('close');
+    this.setState({ modalOpen: false });
+  }
+
+  handleCodeExecution() {
+    console.log("Execution");
+
+    this.setState({ modalOpen: true });
   }
 
   onChange(newValue, e) {
@@ -37,6 +52,12 @@ class CodeEditor extends React.Component {
   render() {
     return (
       <StyledDiv>
+        <ReactModal
+           isOpen={this.state.modalOpen}
+           contentLabel="Minimal Modal Example"
+        >
+          <button onClick={this.handleCloseModal.bind(this)}>Close Modal</button>
+        </ReactModal>
         <div id="ace-editor-div" />
         <AceEditor
          mode="javascript"
@@ -53,7 +74,9 @@ class CodeEditor extends React.Component {
          wrapEnabled={true}
          editorProps={{$blockScrolling: true}}
        />
-        <Button text="Run Code -->" usage="submit" />
+        <div onClick={this.handleCodeExecution.bind(this)}>
+          <Button text="Run Code -->" usage="submit" />
+        </div>
       </StyledDiv>
     );
   }
