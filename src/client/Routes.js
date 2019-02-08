@@ -56,7 +56,7 @@ const Routes = ({ location }) => (
         classNames={'fade'}
       >
         <div className="routeWrapper">
-          <Route exact path="/" component={Intro} />
+          <Route path="/" component={Intro} />
           <Route exact path="/intro" component={Intro} />
           <Route exact path="/crossingsaftey" component={CrossingSaftey} />
           <Route exact path="/sentencesofprograming" component={Sentences} />

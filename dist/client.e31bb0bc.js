@@ -83809,7 +83809,6 @@ var Routes = function Routes(_ref) {
   }, _react.default.createElement("div", {
     className: "routeWrapper"
   }, _react.default.createElement(_reactRouterDom.Route, {
-    exact: true,
     path: "/",
     component: _Intro.default
   }), _react.default.createElement(_reactRouterDom.Route, {
