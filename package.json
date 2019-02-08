@@ -22,8 +22,10 @@
     "@emotion/styled": "^10.0.6",
     "brace": "^0.11.1",
     "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
     "dragula": "^3.7.2",
     "express": "^4.16.4",
+    "gh-pages": "^2.0.1",
     "glamor": "^2.20.40",
     "glamorous": "^5.0.0",
     "lodash": "^4.17.11",
@@ -48,7 +50,8 @@
     "build-watch": "parcel watch ./src/client/index.html",
     "start-watch": "nodemon ./src/server/index.js",
     "dev": "concurrently --kill-others \"npm run start-watch\" \"npm run build-watch\"",
-    "build": "parcel build ./src.client/index.html --public-url https://garfieldclarendon.github.io/learning/",
+    "build": "parcel build ./src/client/index.html --public-url https://garfieldclarendon.github.io/learning/",
+    "build2": "cross-env NODE_ENV=production parcel build ./src/client/index.html --no-minify --public-url ./",
     "start": "npm run build && node ./src/server/index.js"
   }
 }

@@ -3,7 +3,6 @@
 npm-debug.log
 
 # built files
-/dist
 **/.cache
 
 # misc
