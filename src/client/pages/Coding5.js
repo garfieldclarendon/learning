@@ -12,7 +12,7 @@ paddingRight: '20px',
 });
 
 
-const Coding3 = () => (
+const Coding5 = () => (
   <div>
     <TriColumn
       asideContent={
@@ -37,9 +37,9 @@ sleep(5);
         </React.Fragment>
       )
       }
-      prevLink="Coding2"
-      nextLink="Coding4"
-      title="Third Task"
+      prevLink="Coding4"
+      nextLink="Coding5"
+      title="Fifth Task"
       centerContent={
         (
           <CenterStyled>
@@ -62,4 +62,4 @@ sleep(5);
   </div>
 );
 
-export default Coding3;
+export default Coding5;

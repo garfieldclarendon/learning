@@ -192,7 +192,7 @@ export default class CrossingSaftey extends React.Component {
         </div>
       )
     }
-      prevLink="intro"
+      prevLink="ourlesson"
       nextLink="sentencesofprograming"
       title="Railroad Crossing Saftey"
     >

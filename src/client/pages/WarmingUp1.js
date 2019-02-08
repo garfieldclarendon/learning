@@ -7,32 +7,12 @@ const WarmingUp1 = () => (
     asideContent={
     (
       <div>
-        <h1>Things used in Baking</h1>
-        <ul>
-          <li>
-            <b>Ingredients</b>
-            Butter, eggs, milk, etc. are all pieces used to create something
-bigger, a cookie!
-          </li>
-          <li>
-            <b>Mixer</b>
-            All our ingredients need to be combined and mixed to
-make our cookie.
-          </li>
-          <li>
-            <b>Events</b>
-            Putting the cookies into the oven, setting a timer, having the
-timer go off.
-          </li>
-          <li>
-            <b>(ears to) Listen</b>
-            You need to set a timer to know when to take the cookies out.
-          </li>
-        </ul>
+        <h1>Did you Know?</h1>
+        <p>Sometimes pieces of code are called receipes.</p>
       </div>
     )
   }
-    prevLink="syntax"
+    prevLink="sentencesofprograming"
     nextLink="warmingup2"
     title="Baking up Code"
   >

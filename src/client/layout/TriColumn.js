@@ -54,7 +54,7 @@ const StyledAside = styledComponent('aside', {
   color: '#3F301D',
   fontSize: '14px',
   height: '362px',
-  maxWidth: '300px',
+  maxWidth: '400px',
   padding: '20px',
   width: '50%',
 });

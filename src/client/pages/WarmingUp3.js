@@ -13,7 +13,7 @@ const WarmingUp3 = () => (
     )
   }
     prevLink="warmingup2"
-    nextLink="warmingup4"
+    nextLink="warmingupquiz"
     title="Baking up Code"
   >
     <div>

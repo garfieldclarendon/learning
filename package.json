@@ -48,7 +48,7 @@
     "build-watch": "parcel watch ./src/client/index.html",
     "start-watch": "nodemon ./src/server/index.js",
     "dev": "concurrently --kill-others \"npm run start-watch\" \"npm run build-watch\"",
-    "build": "parcel build ./src.client/index.html",
+    "build": "parcel build ./src.client/index.html --public-url ./",
     "start": "npm run build && node ./src/server/index.js"
   }
 }

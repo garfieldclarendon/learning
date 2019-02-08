@@ -10,10 +10,10 @@ import 'brace/theme/monokai'
 const StyledDiv = styledComponent('section', {
   '& .ace_editor': {
     border: '1px solid #dacab8',
-    width: '400px',
+    //width: '400px',
   },
   '& aside': {
-    height: '400px',
+    //height: '400px',
   },
   '& button': {
     marginTop: '10px',
@@ -48,20 +48,11 @@ class CodeEditor extends React.Component {
          setUseWrapMode={true}
          name="ace-editor-div"
          defaultValue={this.props.code}
+         height={this.props.height}
+         width={this.props.width}
+         wrapEnabled={true}
          editorProps={{$blockScrolling: true}}
        />
-        {/* <ReactAce
-          mode="javascript"
-          theme="monokai"
-          setReadOnly={false}
-          setHighlightActiveLine={false}
-          gotoLine={1}
-          setUseWrapMode={true}
-          setValue={this.props.code}
-          onChange={this.onChange}
-          style={{ height: '400px', width: '400px' }}
-          ref={(instance) => { this.ace = instance; }} // Let's put things into scope
-        /> */}
         <Button text="Run Code -->" usage="submit" />
       </StyledDiv>
     );
