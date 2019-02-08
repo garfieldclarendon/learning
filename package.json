@@ -51,7 +51,7 @@
     "start-watch": "nodemon ./src/server/index.js",
     "dev": "concurrently --kill-others \"npm run start-watch\" \"npm run build-watch\"",
     "build": "parcel build ./src/client/index.html --public-url https://garfieldclarendon.github.io/learning/",
-    "build2": "cross-env NODE_ENV=production parcel build ./src/client/index.html --no-minify --public-url ./",
+    "build2": "cross-env NODE_ENV=production parcel build ./src/client/index.html --no-minify --out-dir docs --public-url ./",
     "start": "npm run build && node ./src/server/index.js"
   }
 }
