@@ -1,7 +1,9 @@
 import React from 'react';
 import DoubleColumn from '../layout/DoubleColumn';
 
-const WarmingUp2 = () => (
+const WarmingUp2 = () => {
+  window.scrollTo(0, 0);
+  return (
   <DoubleColumn
       asideContent={
       (
@@ -57,6 +59,6 @@ timer go off.
         </ul>
       </div>
     </DoubleColumn>
-);
+)};
 
 export default WarmingUp2;

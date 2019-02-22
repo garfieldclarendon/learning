@@ -6,9 +6,9 @@ import SortActivity from '../Components/SortActivity';
 const activityData = {
   tasks: {
     'task-1': { id: 'task-1', content: 'make'},
-    'task-2': { id: 'task-2', content: 'Cookies'},
+    'task-2': { id: 'task-2', content: ';'},
     'task-3': { id: 'task-3', content: '()'},
-    'task-4': { id: 'task-4', content: ';'},
+    'task-4': { id: 'task-4', content: 'Cookies'},
   },
   columns: {
     'column1': {
@@ -26,6 +26,7 @@ const activityData = {
 };
 
 const Sentences = () => {
+  window.scrollTo(0, 0);
   return (
   <div>
     <DoubleColumn
@@ -36,7 +37,7 @@ const Sentences = () => {
         </div>
       )
     }
-      prevLink="intro"
+      prevLink="crossingsaftey"
       nextLink="warmingup1"
       title="Sentences of Programing"
     >
@@ -48,7 +49,7 @@ const Sentences = () => {
         <li><b>;</b> Semicolon, this piece of punctuation acts like a period and marks the end of a line of code.</li>
         <li><b>Line of code</b> Instead of sentences, we have lines of code.</li>
       </ul>
-      <SortActivity activityData={activityData} answerKey={['task-1','task-2','task-3','task-4']} />
+      <SortActivity activityData={activityData} answerKey={['task-1','task-4','task-3','task-2']} />
     </DoubleColumn>
   </div>
 )};

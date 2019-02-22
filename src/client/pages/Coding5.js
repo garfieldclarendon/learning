@@ -20,7 +20,7 @@ const Coding5 = () => (
         <React.Fragment>
           <h1>Code Example Bank</h1>
           <CodeEditor
-            height="350px"
+            height="330px"
             width="350px"
             code={`socket.on('sensorTriggered', () => {
     // Something happens here whenever any sensor is triggered
@@ -32,32 +32,43 @@ io.emit('turnGatesOff');
 
 // in seconds
 sleep(5);
+
+// Make lights all go red
+io.emit('stopLightCycle');
+
+// Resume light cycle
+io.emit('startLightCycle');
 `}
           />
         </React.Fragment>
       )
       }
       prevLink="Coding4"
-      nextLink="Coding5"
+      nextLink="wrappinpup"
       title="Fifth Task"
       centerContent={
         (
           <CenterStyled>
             <h1>Code to Execute</h1>
             <CodeEditor
+              showButton={true}
               height="350px"
               width="350px"
               code={`socket.on('sensorTriggered', () => {
     io.emit('turnGatesOn');
-    sleep(5);
+});
+
+socket.on('sensorInactiveTriggered', () => {
     io.emit('turnGatesOff');
-});`}
+});
+io.emit('stopLightCycle');
+`}
             />
           </CenterStyled>
           )}
     >
-      <p>Hum, sometimes the gates are going up while a train is still there! We can’t have that.</p>
-      <h2>How can we get the gates to ONLY go up AFTER the train is not on the crossing?</h2>
+      <p>The traffic light is not synced up with the railroad crossing.</p>
+      <h2>When the train leaves, the lights never turn green!</h2>
   </TriColumn>
   </div>
 );

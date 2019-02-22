@@ -64,7 +64,9 @@ const quiz = {
   ]
 };
 
-const WarmingUpQuiz = () => (
+const WarmingUpQuiz = () => {
+  window.scrollTo(0, 0);
+  return (
   <div>
     <SingleColumn
       prevLink="warmingup4"
@@ -74,6 +76,6 @@ const WarmingUpQuiz = () => (
       <Quiz quiz={quiz} />
     </SingleColumn>
   </div>
-);
+)};
 
 export default WarmingUpQuiz;

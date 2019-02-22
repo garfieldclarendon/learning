@@ -29,6 +29,8 @@ const StyledSection = styledComponent('section', {
     },
     '& svg': {
       marginRight: '10px',
+      marginTop: '30px',
+      height: '120px',
     },
     display: 'flex',
   },
@@ -206,9 +208,9 @@ class SortActivity extends React.Component {
     return (
       <StyledSection>
         <header>
-          <Icon width="100px" name="personTallHair" />
+          <Icon width="100px" name="personRedHood" />
           <div>
-            <h2>Help James build a program</h2>
+            <h2>Help Javina build a program</h2>
             <p>Drag the pieces of code into the proper spot to build a program.</p>
           </div>
         </header>

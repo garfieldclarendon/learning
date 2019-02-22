@@ -12,7 +12,9 @@ paddingRight: '20px',
 });
 
 
-const Coding1 = () => (
+const Coding1 = () => {
+  window.scrollTo(0, 0);
+  return (
   <div>
     <TriColumn
       asideContent={
@@ -20,7 +22,7 @@ const Coding1 = () => (
         <React.Fragment>
           <h1>Code Example Bank</h1>
           <CodeEditor
-            height="350px"
+            height="330px"
             width="350px"
             code={`socket.on('sensorTriggered', () => {
     // Something happens here whenever any sensor is triggered
@@ -41,6 +43,7 @@ io.emit('turnGatesOff');`}
           <CenterStyled>
             <h1>Code to Execute</h1>
             <CodeEditor
+              showButton={true}
               height="350px"
               width="350px"
               code={`socket.on('sensorTriggered', () => {
@@ -54,6 +57,6 @@ io.emit('turnGatesOff');`}
       <h2>How can we trigger the crossing gates before the train arrives?</h2>
   </TriColumn>
   </div>
-);
+)};
 
 export default Coding1;

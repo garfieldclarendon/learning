@@ -2,7 +2,9 @@ import React from 'react';
 import DoubleColumn from '../layout/DoubleColumn';
 import Icon from '../../assets/img'
 
-const WarmingUp3 = () => (
+const WarmingUp3 = () => {
+  window.scrollTo(0, 0);
+  return (
   <DoubleColumn
     asideContent={
     (
@@ -28,6 +30,6 @@ const WarmingUp3 = () => (
       </ul>
     </div>
   </DoubleColumn>
-);
+)};
 
 export default WarmingUp3;

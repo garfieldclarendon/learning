@@ -3,6 +3,7 @@ import DoubleColumn from '../layout/DoubleColumn'
 import Icon from '../../assets/img'
 
 const OurLesson = () => {
+  window.scrollTo(0, 0);
   return (
   <div>
     <DoubleColumn

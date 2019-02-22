@@ -9,6 +9,7 @@ import Syntax from './Syntax'
 import Cook from './Cook'
 import Mixer from './Mixer'
 import TallHair from './people/TallHair'
+import RedHood from './people/RedHood'
 import Crossing from './Crossing'
 
 const Icon = props => {
@@ -29,6 +30,8 @@ const Icon = props => {
       return <PeopleCollage {...props} />;
     case "personTallHair":
       return <TallHair {...props} />;
+    case "personRedHood":
+      return <RedHood {...props} />;
     case "mixer":
       return <Mixer {...props} />;
     case "structure":

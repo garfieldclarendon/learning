@@ -26,6 +26,7 @@ class CodeEditor extends React.Component {
     super();
     this.onChange = this.onChange.bind(this);
     this.state = {
+      code: null,
       modalOpen: false,
     }
   }
@@ -37,13 +38,13 @@ class CodeEditor extends React.Component {
 
   handleCodeExecution() {
     console.log("Execution");
-
-    this.setState({ modalOpen: true });
+    run();
   }
 
   onChange(newValue, e) {
-    console.log(newValue, e);
+    document.getElementById('cnsl').value = newValue;
     if (this.ace) {
+      this.setState({ code: newValue });
       const editor = this.ace.editor; // The editor object is from Ace's API
       console.log(editor.getValue()); // Outputs the value of the editor
     }
@@ -74,9 +75,10 @@ class CodeEditor extends React.Component {
          wrapEnabled={true}
          editorProps={{$blockScrolling: true}}
        />
+       {this.props.showButton &&
         <div onClick={this.handleCodeExecution.bind(this)}>
           <Button text="Run Code -->" usage="submit" />
-        </div>
+        </div> }
       </StyledDiv>
     );
   }

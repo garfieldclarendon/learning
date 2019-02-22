@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script>
+    var socket = io.connect('http://localhost');
+    function run() {
+        var el = document.getElementById('cnsl');
+        var scriptText = el.value;
+        var oldScript = document.getElementById('scriptContainer');
+        var newScript;
+
+        console.log("Run: " + el.value);
+        if (oldScript) {
+            oldScript.parentNode.removeChild(oldScript);
+        }
+
+        newScript = document.createElement('script');
+        newScript.id = 'scriptContainer';
+        newScript.text = el.value;
+        document.body.appendChild(newScript);
+    };
+    console.log(socket);
+    socket.on('photoResistorTriggered', (data) => {
+        console.log(data);
+    });
+  </script>
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Niramit' />
@@ -10,6 +34,15 @@
     <title>JS Learning</title>
   </head>
   <body>
+    <textarea style="display: none" id="cnsl">
+        socket.emit('triggerEWTrafficLight');
+        socket.on('photoResistorTriggered', () => {
+          socket.emit('triggerGatesOn');
+        });
+        socket.on('photoResistorInactive', () => {
+          socket.emit('triggerGatesOff');
+        });
+    </textarea>
     <div id="root"></div>
     <script src="./index.js"></script>
   </body>

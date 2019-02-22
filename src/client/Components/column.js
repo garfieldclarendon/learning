@@ -20,8 +20,10 @@ const TaskList = styled.div`
   padding: 8px;
   transition: background-color 0.2s ease;
   background-color: ${props => (props.isDraggingOver ? 'skyblue' : 'inherit')}
-  flex-grow: 1;
-  min-height: 100px;
+  display: flex;
+
+  height: 50px;
+  width: 204px;
 `;
 
 class InnerList extends React.Component {
@@ -58,6 +60,7 @@ export default class Column extends React.Component {
               droppableId={this.props.column.id}
               isDropDisabled={this.props.isDropDisabled}
               type="task"
+              direction="horizontal"
             >
               {(provided, snapshot) => (
                 <TaskList

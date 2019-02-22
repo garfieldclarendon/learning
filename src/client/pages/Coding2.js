@@ -20,7 +20,7 @@ const Coding2 = () => (
         <React.Fragment>
           <h1>Code Example Bank</h1>
           <CodeEditor
-            height="350px"
+            height="330px"
             width="350px"
             code={`socket.on('sensorTriggered', () => {
     // Something happens here whenever any sensor is triggered
@@ -37,7 +37,7 @@ sleep(5);
         </React.Fragment>
       )
       }
-      prevLink="coding2"
+      prevLink="coding1"
       nextLink="coding3"
       title="Second Task"
       centerContent={
@@ -45,6 +45,7 @@ sleep(5);
           <CenterStyled>
             <h1>Code to Execute</h1>
             <CodeEditor
+              showButton={true}
               height="350px"
               width="350px"
               code={`socket.on('sensorTriggered', () => {
