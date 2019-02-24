@@ -38285,7 +38285,7 @@ var Intro = function Intro() {
     title: "Welcome"
   }, _react.default.createElement("h1", null, "Welcome"), _react.default.createElement(ImageWrapper, null, _react.default.createElement(_img.default, {
     name: "clock1"
-  })), _react.default.createElement("p", null, "While we setting up, please wait. Once told, click continue."), _react.default.createElement("small", null, _react.default.createElement("a", {
+  })), _react.default.createElement("p", null, "While we setting up, please wait. Once told, click \"Next\"."), _react.default.createElement("small", null, _react.default.createElement("a", {
     href: "https://www.vecteezy.com/"
   }, "Graphics by: www.vecteezy.com")));
 };
@@ -52836,7 +52836,7 @@ function (_React$Component) {
       return _react.default.createElement(StyledSection, null, _react.default.createElement("header", null, _react.default.createElement(_img.default, {
         width: "100px",
         name: "personRedHood"
-      }), _react.default.createElement("div", null, _react.default.createElement("h2", null, "Help Javina build a program"), _react.default.createElement("p", null, "Drag the pieces of code into the proper spot to build a program."))), _react.default.createElement(FeedbackSection, null, _react.default.createElement("span", {
+      }), _react.default.createElement("div", null, _react.default.createElement("h2", null, "Help Javina build a program"), _react.default.createElement("p", null, "Drag and re-order the pieces of code to the Program box to create a working function."))), _react.default.createElement(FeedbackSection, null, _react.default.createElement("span", {
         className: "activityError ".concat(this.state.done && !this.state.correct ? 'visible' : '')
       }, "Not quite, please try again"), _react.default.createElement("span", {
         className: "activitySuccess ".concat(this.state.done && this.state.correct ? 'visible' : '')
@@ -52887,8 +52887,28 @@ var _img = _interopRequireDefault(require("../../assets/img"));
 
 var _SortActivity = _interopRequireDefault(require("../Components/SortActivity"));
 
+var _styledComponent = require("../utils/styledComponent");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var StyledDiv = (0, _styledComponent.styledComponent)('div', {
+  '& .codePiece': {
+    display: 'block',
+    marginBottom: '15px'
+  },
+  '& .body': {
+    color: '#4ba24b'
+  },
+  '& .function': {
+    color: '#d43fc6'
+  },
+  '& .event': {
+    color: '#63cef1'
+  },
+  '& .eventListener': {
+    color: '#e68e4b'
+  }
+});
 var activityData = {
   tasks: {
     'task-1': {
@@ -52925,15 +52945,23 @@ var activityData = {
 
 var Sentences = function Sentences() {
   window.scrollTo(0, 0);
-  return _react.default.createElement("div", null, _react.default.createElement(_DoubleColumn.default, {
+  return _react.default.createElement(StyledDiv, null, _react.default.createElement(_DoubleColumn.default, {
     asideContent: _react.default.createElement("div", null, _react.default.createElement(_img.default, {
       width: "400px",
       name: "structure"
     })),
-    prevLink: "crossingsaftey",
-    nextLink: "warmingup1",
+    prevLink: "warmingup3",
+    nextLink: "warmingupquiz",
     title: "Sentences of Programing"
-  }, _react.default.createElement("p", null, "You've learned that in English we have rules we all follow in order to understand eachother. Programing is similar. Unlike humans though, computers can't ask you, \"What did you mean?\". This is why it's important what we tell a computer makes sense for it."), _react.default.createElement("p", null, "Sentences in English are called Syntax in programing. Let's learn the basics to build a program and then try it on your own."), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", null, "Function"), " In the example on the right, our funciton is called \"runMixer\". Functions can be called anything but generally follow a pattern of verb and noun."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Parentheses"), " This pair goes right next to a function. They might contain additional infomration between them."), _react.default.createElement("li", null, _react.default.createElement("b", null, ";"), " Semicolon, this piece of punctuation acts like a period and marks the end of a line of code."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Line of code"), " Instead of sentences, we have lines of code.")), _react.default.createElement(_SortActivity.default, {
+  }, _react.default.createElement("p", null, "You've learned that in English we have rules we all follow in order to understand eachother. Programing is similar. Unlike humans though, computers can't ask you, \"What did you mean?\". This is why it's important what we tell a computer makes sense for it."), _react.default.createElement("p", null, "Sentences in English are called Syntax in programing. Let's learn the basics to build a program and then try it on your own."), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", {
+    className: "function"
+  }, "Function"), " In the example on the right, our funciton is called \"runMixer\". Functions can be called anything but generally follow a pattern of verb and noun."), _react.default.createElement("li", null, _react.default.createElement("b", {
+    className: "function"
+  }, "Parentheses"), " This pair goes right next to a function. They might contain additional infomration between them."), _react.default.createElement("li", null, _react.default.createElement("b", {
+    className: "function"
+  }, ";"), " Semicolon, this piece of punctuation acts like a period and marks the end of a line of code."), _react.default.createElement("li", null, _react.default.createElement("b", {
+    className: "body"
+  }, "Line of code"), " Instead of sentences, we have lines of code.")), _react.default.createElement(_SortActivity.default, {
     activityData: activityData,
     answerKey: ['task-1', 'task-4', 'task-3', 'task-2']
   })));
@@ -52941,7 +52969,7 @@ var Sentences = function Sentences() {
 
 var _default = Sentences;
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","../layout/DoubleColumn":"layout/DoubleColumn.js","../../assets/img":"../assets/img/index.js","../Components/SortActivity":"Components/SortActivity.js"}],"pages/WarmingUp1.js":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","../layout/DoubleColumn":"layout/DoubleColumn.js","../../assets/img":"../assets/img/index.js","../Components/SortActivity":"Components/SortActivity.js","../utils/styledComponent":"utils/styledComponent.js"}],"pages/WarmingUp1.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -52988,13 +53016,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var WarmingUp2 = function WarmingUp2() {
   window.scrollTo(0, 0);
   return _react.default.createElement(_DoubleColumn.default, {
-    asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Things used in Baking"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", null, "Ingredients"), "Butter, eggs, milk, etc. are all pieces used to create something bigger, a cookie!"), _react.default.createElement("li", null, _react.default.createElement("b", null, "Mixer"), "All our ingredients need to be combined and mixed to make our cookie."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Events"), "Putting the cookies into the oven, setting a timer, having the timer go off."), _react.default.createElement("li", null, _react.default.createElement("b", null, "(ears to) Listen"), "You need to set a timer to know when to take the cookies out."))),
+    asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Things used in Coding"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", null, "Body"), "Code that is needed for the computer to do something like turning on an LED."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Function"), "Takes the body and does something with it. Like a mixer, it needs to be turned on by an event."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Events"), "Something that happens from an input to the computer, like pressing a button."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Event Listeners"), "Listening for when an event happens and then making a function happen."))),
     prevLink: "warmingup1",
     nextLink: "warmingup3",
     title: "Let\u2019s see how these compare to codeing"
   }, _react.default.createElement("div", {
     className: "compareToBox"
-  }, _react.default.createElement("h1", null, "Things used in Coding"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", null, "Body"), "Code that is needed for the computer to do something like turning on an LED."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Function"), "Takes the body and does something with it. Like a mixer, it needs to be turned on by an event."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Events"), "Something that happens from an input to the computer, like pressing a button."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Event Listeners"), "Listening for when an event happens and then making a function happen."))));
+  }, _react.default.createElement("h1", null, "Things used in Baking"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", null, "Ingredients"), "Butter, eggs, milk, etc. are all pieces used to create something bigger, a cookie!"), _react.default.createElement("li", null, _react.default.createElement("b", null, "Mixer"), "All our ingredients need to be combined and mixed to make our cookie."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Events"), "Putting the cookies into the oven, setting a timer, having the timer go off."), _react.default.createElement("li", null, _react.default.createElement("b", null, "(ears to) Listen"), "You need to set a timer to know when to take the cookies out."))));
 };
 
 var _default = WarmingUp2;
@@ -53013,24 +53041,55 @@ var _DoubleColumn = _interopRequireDefault(require("../layout/DoubleColumn"));
 
 var _img = _interopRequireDefault(require("../../assets/img"));
 
+var _styledComponent = require("../utils/styledComponent");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var StyledDiv = (0, _styledComponent.styledComponent)('div', {
+  '& .codePiece': {
+    display: 'block',
+    marginBottom: '15px'
+  },
+  '& .body': {
+    color: '#4ba24b'
+  },
+  '& .function': {
+    color: '#d43fc6'
+  },
+  '& .event': {
+    color: '#63cef1'
+  },
+  '& .eventListener': {
+    color: '#e68e4b'
+  }
+});
 
 var WarmingUp3 = function WarmingUp3() {
   window.scrollTo(0, 0);
   return _react.default.createElement(_DoubleColumn.default, {
     asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Imagine This"), _react.default.createElement("p", null, "Telling a computer what to do is like being blindfolded and decribing to a friend how to bake a batch of your favorite cookies. If you don't describe things well you just might end up something awful.")),
     prevLink: "warmingup2",
-    nextLink: "warmingupquiz",
+    nextLink: "sentencesofprograming",
     title: "Baking up Code"
-  }, _react.default.createElement("div", null, _react.default.createElement("p", null, "Think back to the last time you made cookies. You probably followed a recipe or got help from an adult. Let's see how we can translate some common tasks into code using what you've learned so far."), _react.default.createElement(_img.default, {
+  }, _react.default.createElement(StyledDiv, null, _react.default.createElement("p", null, "Think back to the last time you made cookies. You probably followed a recipe or got help from an adult. Let's see how we can translate some common tasks into code using what you've learned so far."), _react.default.createElement(_img.default, {
     name: "mixer",
     width: "200"
-  }), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", null, "Ingredients"), " We need to place our ingredients into our mixing bowl"), _react.default.createElement("li", null, _react.default.createElement("b", null, "Mixer"), " Our mixer will perform a job and combine everything"), _react.default.createElement("li", null, _react.default.createElement("b", null, "Place in Over"), " We need to bake our cookies"), _react.default.createElement("li", null, _react.default.createElement("b", null, "Listen for Timer"), " We need to wait to hear when the timer goes off"), _react.default.createElement("li", null, _react.default.createElement("b", null, "Taking Out to Cool"), " We need remove the tray and set aside to cool"))));
+  }), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("i", null, "Ingredients -"), " We need to place our ingredients into our mixing bowl. ", _react.default.createElement("i", {
+    className: "codePiece body"
+  }, "This is a body of a function.")), _react.default.createElement("li", null, _react.default.createElement("i", null, "Mixer -"), " Our mixer will perform a job and combine everything. ", _react.default.createElement("i", {
+    className: "codePiece function"
+  }, "This is a function.")), _react.default.createElement("li", null, _react.default.createElement("i", null, "Place in Over -"), " We need to bake our cookies. ", _react.default.createElement("i", {
+    className: "codePiece event"
+  }, "This is an event.")), _react.default.createElement("li", null, _react.default.createElement("i", null, "Listen for Timer -"), " We need to wait to hear when the timer goes off. ", _react.default.createElement("i", {
+    className: "codePiece eventListener"
+  }, "This is an event listener.")), _react.default.createElement("li", null, _react.default.createElement("i", null, "Taking Out to Cool"), " We need remove the tray and set aside to cool.  ", _react.default.createElement("i", {
+    className: "codePiece event"
+  }, "This is another event.")))));
 };
 
 var _default = WarmingUp3;
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","../layout/DoubleColumn":"layout/DoubleColumn.js","../../assets/img":"../assets/img/index.js"}],"../../node_modules/react-quiz-component/lib/Question.js":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","../layout/DoubleColumn":"layout/DoubleColumn.js","../../assets/img":"../assets/img/index.js","../utils/styledComponent":"utils/styledComponent.js"}],"../../node_modules/react-quiz-component/lib/Question.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -53564,7 +53623,7 @@ var quiz = {
 var WarmingUpQuiz = function WarmingUpQuiz() {
   window.scrollTo(0, 0);
   return _react.default.createElement("div", null, _react.default.createElement(_SingleColumn.default, {
-    prevLink: "warmingup4",
+    prevLink: "sentencesofprograming",
     nextLink: "coding1",
     title: "Let's Review"
   }, _react.default.createElement(_reactQuizComponent.default, {
@@ -83700,7 +83759,7 @@ function (_React$Component) {
       return _react.default.createElement("div", null, _react.default.createElement(_DoubleColumn.default, {
         asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Think about It"), _react.default.createElement("p", null, "Next time you travel over a railroad crossing, look to see all the saftey devices"), _react.default.createElement("p", null, "Look Listen and Live. See tracks, always think there might be a train!")),
         prevLink: "ourlesson",
-        nextLink: "sentencesofprograming",
+        nextLink: "warmingup1",
         title: "Railroad Crossing Saftey"
       }, _react.default.createElement("p", null, "Let's look at a typical railroad crossing. Click the image below to identify all the saftey systems in place."), _react.default.createElement(ImageWrapper, null, _react.default.createElement("div", {
         className: "hotSpots"
@@ -85667,7 +85726,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62181" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50155" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

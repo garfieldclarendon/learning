@@ -194,7 +194,7 @@ export default class CrossingSaftey extends React.Component {
       )
     }
       prevLink="ourlesson"
-      nextLink="sentencesofprograming"
+      nextLink="warmingup1"
       title="Railroad Crossing Saftey"
     >
       <p>Let's look at a typical railroad crossing. Click the image below to identify all the saftey systems in place.</p>

@@ -69,7 +69,7 @@ const WarmingUpQuiz = () => {
   return (
   <div>
     <SingleColumn
-      prevLink="warmingup4"
+      prevLink="sentencesofprograming"
       nextLink="coding1"
       title="Let's Review"
     >

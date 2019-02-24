@@ -19,7 +19,7 @@ const Intro = () => (
     <ImageWrapper>
       <Icon name="clock1" />
     </ImageWrapper>
-    <p>While we setting up, please wait. Once told, click continue.</p>
+    <p>While we setting up, please wait. Once told, click "Next".</p>
     <small><a href="https://www.vecteezy.com/">Graphics by: www.vecteezy.com</a></small>
   </SingleColumn>
 );

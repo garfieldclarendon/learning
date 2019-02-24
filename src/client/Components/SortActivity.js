@@ -211,7 +211,7 @@ class SortActivity extends React.Component {
           <Icon width="100px" name="personRedHood" />
           <div>
             <h2>Help Javina build a program</h2>
-            <p>Drag the pieces of code into the proper spot to build a program.</p>
+            <p>Drag and re-order the pieces of code to the Program box to create a working function.</p>
           </div>
         </header>
         <FeedbackSection>
