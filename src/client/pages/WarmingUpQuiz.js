@@ -2,6 +2,10 @@
 import React from 'react';
 import SingleColumn from '../layout/SingleColumn';
 import Quiz from 'react-quiz-component';
+import crossing2 from '../../assets/img/crossing2.jpg'
+import crossing3 from '../../assets/img/crossing3.jpg'
+import crossing4 from '../../assets/img/crossing4.jpg'
+import crossing5 from '../../assets/img/crossing5.jpg'
 
 const quiz = {
   "quizTitle": "Core Concepts",
@@ -25,7 +29,7 @@ const quiz = {
       "question": "What would someone pressing a button be called?",
       "questionType": "text",
       "answers": [
-        "Action",
+        "Parentheses",
         "Event",
         "Pulse Effect",
         "Cookie"
@@ -51,31 +55,51 @@ const quiz = {
       "question": "Find the crossing that is most safe",
       "questionType": "photo",
       "answers": [
-        "https://dummyimage.com/600x400/000/fff&text=A",
-        "https://dummyimage.com/600x400/000/fff&text=B",
-        "https://dummyimage.com/600x400/000/fff&text=C",
-        "https://dummyimage.com/600x400/000/fff&text=D"
+        crossing2,
+        crossing3,
+        crossing4,
+        crossing5
       ],
-      "correctAnswer": "4",
+      "correctAnswer": "3",
       "messageForCorrectAnswer": "Correct answer. Good job.",
       "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "explanation": "This crossing uses all the saftey systems including barriers to prevent cars from driving around down gates."
     }
   ]
 };
 
-const WarmingUpQuiz = () => {
-  window.scrollTo(0, 0);
-  return (
-  <div>
-    <SingleColumn
-      prevLink="sentencesofprograming"
-      nextLink="coding1"
-      title="Let's Review"
-    >
-      <Quiz quiz={quiz} />
-    </SingleColumn>
-  </div>
-)};
+export default class WarmingUpQuiz extends React.Component {
 
-export default WarmingUpQuiz;
+  constructor(props) {
+    super(props);
+    this.state = {
+      done: false,
+    }
+  };
+
+  // This is very hacky but there is no completion event for the quiz
+  enableNext = () =>
+    setTimeout(
+      function() {
+          this.setState({done: true});
+      }
+      .bind(this),
+      180000
+    );
+
+  render() {
+    window.scrollTo(0, 0);
+    this.enableNext();
+    return (
+    <div>
+      <SingleColumn
+        prevLink="sentencesofprograming"
+        nextLink={this.state.done ? 'coding1' : null}
+        title="Let's Review"
+      >
+        <Quiz quiz={quiz} />
+      </SingleColumn>
+    </div>
+  )};
+
+}

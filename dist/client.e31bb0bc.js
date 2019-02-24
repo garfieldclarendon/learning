@@ -53565,7 +53565,15 @@ Quiz.propTypes = {
 };
 var _default = Quiz;
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","prop-types":"../../node_modules/prop-types/index.js","./Question":"../../node_modules/react-quiz-component/lib/Question.js","./styles.css":"../../node_modules/react-quiz-component/lib/styles.css"}],"pages/WarmingUpQuiz.js":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","prop-types":"../../node_modules/prop-types/index.js","./Question":"../../node_modules/react-quiz-component/lib/Question.js","./styles.css":"../../node_modules/react-quiz-component/lib/styles.css"}],"../assets/img/crossing2.jpg":[function(require,module,exports) {
+module.exports = "/crossing2.99e8c6b8.jpg";
+},{}],"../assets/img/crossing3.jpg":[function(require,module,exports) {
+module.exports = "/crossing3.1e5f6009.jpg";
+},{}],"../assets/img/crossing4.jpg":[function(require,module,exports) {
+module.exports = "/crossing4.da0fe13a.jpg";
+},{}],"../assets/img/crossing5.jpg":[function(require,module,exports) {
+module.exports = "/crossing5.2711ac10.jpg";
+},{}],"pages/WarmingUpQuiz.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -53579,9 +53587,36 @@ var _SingleColumn = _interopRequireDefault(require("../layout/SingleColumn"));
 
 var _reactQuizComponent = _interopRequireDefault(require("react-quiz-component"));
 
+var _crossing = _interopRequireDefault(require("../../assets/img/crossing2.jpg"));
+
+var _crossing2 = _interopRequireDefault(require("../../assets/img/crossing3.jpg"));
+
+var _crossing3 = _interopRequireDefault(require("../../assets/img/crossing4.jpg"));
+
+var _crossing4 = _interopRequireDefault(require("../../assets/img/crossing5.jpg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/* eslint-disable */
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var quiz = {
   "quizTitle": "Core Concepts",
   "quizSynopsis": "Let's review what we just learned.",
@@ -53596,7 +53631,7 @@ var quiz = {
   }, {
     "question": "What would someone pressing a button be called?",
     "questionType": "text",
-    "answers": ["Action", "Event", "Pulse Effect", "Cookie"],
+    "answers": ["Parentheses", "Event", "Pulse Effect", "Cookie"],
     "correctAnswer": "2",
     "messageForCorrectAnswer": "Correct answer. Good job!",
     "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
@@ -53612,28 +53647,60 @@ var quiz = {
   }, {
     "question": "Find the crossing that is most safe",
     "questionType": "photo",
-    "answers": ["https://dummyimage.com/600x400/000/fff&text=A", "https://dummyimage.com/600x400/000/fff&text=B", "https://dummyimage.com/600x400/000/fff&text=C", "https://dummyimage.com/600x400/000/fff&text=D"],
-    "correctAnswer": "4",
+    "answers": [_crossing.default, _crossing2.default, _crossing3.default, _crossing4.default],
+    "correctAnswer": "3",
     "messageForCorrectAnswer": "Correct answer. Good job.",
     "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "explanation": "This crossing uses all the saftey systems including barriers to prevent cars from driving around down gates."
   }]
 };
 
-var WarmingUpQuiz = function WarmingUpQuiz() {
-  window.scrollTo(0, 0);
-  return _react.default.createElement("div", null, _react.default.createElement(_SingleColumn.default, {
-    prevLink: "sentencesofprograming",
-    nextLink: "coding1",
-    title: "Let's Review"
-  }, _react.default.createElement(_reactQuizComponent.default, {
-    quiz: quiz
-  })));
-};
+var WarmingUpQuiz =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(WarmingUpQuiz, _React$Component);
 
-var _default = WarmingUpQuiz;
-exports.default = _default;
-},{"react":"../../node_modules/react/index.js","../layout/SingleColumn":"layout/SingleColumn.js","react-quiz-component":"../../node_modules/react-quiz-component/lib/Quiz.js"}],"layout/TriColumn.js":[function(require,module,exports) {
+  function WarmingUpQuiz(props) {
+    var _this;
+
+    _classCallCheck(this, WarmingUpQuiz);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(WarmingUpQuiz).call(this, props));
+
+    _defineProperty(_assertThisInitialized(_this), "enableNext", function () {
+      return setTimeout(function () {
+        this.setState({
+          done: true
+        });
+      }.bind(_assertThisInitialized(_this)), 180000);
+    });
+
+    _this.state = {
+      done: false
+    };
+    return _this;
+  }
+
+  _createClass(WarmingUpQuiz, [{
+    key: "render",
+    value: function render() {
+      window.scrollTo(0, 0);
+      this.enableNext();
+      return _react.default.createElement("div", null, _react.default.createElement(_SingleColumn.default, {
+        prevLink: "sentencesofprograming",
+        nextLink: this.state.done ? 'coding1' : null,
+        title: "Let's Review"
+      }, _react.default.createElement(_reactQuizComponent.default, {
+        quiz: quiz
+      })));
+    }
+  }]);
+
+  return WarmingUpQuiz;
+}(_react.default.Component);
+
+exports.default = WarmingUpQuiz;
+},{"react":"../../node_modules/react/index.js","../layout/SingleColumn":"layout/SingleColumn.js","react-quiz-component":"../../node_modules/react-quiz-component/lib/Quiz.js","../../assets/img/crossing2.jpg":"../assets/img/crossing2.jpg","../../assets/img/crossing3.jpg":"../assets/img/crossing3.jpg","../../assets/img/crossing4.jpg":"../assets/img/crossing4.jpg","../../assets/img/crossing5.jpg":"../assets/img/crossing5.jpg"}],"layout/TriColumn.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
