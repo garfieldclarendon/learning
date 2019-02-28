@@ -94,7 +94,7 @@ export default class WarmingUpQuiz extends React.Component {
     <div>
       <SingleColumn
         prevLink="sentencesofprograming"
-        nextLink={this.state.done ? 'coding1' : null}
+        nextLink={this.state.done ? 'bridge1' : null}
         title="Let's Review"
       >
         <Quiz quiz={quiz} />

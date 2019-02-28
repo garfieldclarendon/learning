@@ -14,7 +14,7 @@ const WarmingUp1 = () => {
       </div>
     )
   }
-    prevLink="sentencesofprograming"
+    prevLink="crossingsaftey"
     nextLink="warmingup2"
     title="Baking up Code"
   >

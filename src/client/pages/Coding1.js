@@ -35,7 +35,7 @@ io.emit('turnGatesOff');`}
         </React.Fragment>
       )
       }
-      prevLink="warmingupquiz"
+      prevLink="bridge2"
       nextLink="coding2"
       title="First Task"
       centerContent={
