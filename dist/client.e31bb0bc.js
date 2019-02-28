@@ -52899,14 +52899,20 @@ var StyledDiv = (0, _styledComponent.styledComponent)('div', {
   '& .body': {
     color: '#4ba24b'
   },
-  '& .function': {
-    color: '#d43fc6'
-  },
   '& .event': {
     color: '#63cef1'
   },
-  '& .eventListener': {
+  '& .semicolon': {
     color: '#e68e4b'
+  },
+  '& .library': {
+    color: '#5c4ae0'
+  },
+  '& .function': {
+    color: '#2a8d9e'
+  },
+  '& .parentheses': {
+    color: '#c73e5c'
   }
 });
 var activityData = {
@@ -52946,19 +52952,24 @@ var activityData = {
 var Sentences = function Sentences() {
   window.scrollTo(0, 0);
   return _react.default.createElement(StyledDiv, null, _react.default.createElement(_DoubleColumn.default, {
-    asideContent: _react.default.createElement("div", null, _react.default.createElement(_img.default, {
-      width: "400px",
-      name: "structure"
-    })),
+    asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Function Bodies"), _react.default.createElement("p", null, "A function can take anything but it's not wise. Just like you can throw rocks into a mixer, you won't have one for too long if you do!")),
     prevLink: "warmingup3",
     nextLink: "warmingupquiz",
     title: "Sentences of Programing"
-  }, _react.default.createElement("p", null, "You've learned that in English we have rules we all follow in order to understand eachother. Programing is similar. Unlike humans though, computers can't ask you, \"What did you mean?\". This is why it's important what we tell a computer makes sense for it."), _react.default.createElement("p", null, "Sentences in English are called Syntax in programing. Let's learn the basics to build a program and then try it on your own."), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", {
+  }, _react.default.createElement("p", null, "You've learned that in English we have rules we all follow in order to understand eachother. Programing is similar. Unlike humans though, computers can't ask you, \"What did you mean?\". This is why it's important what we tell a computer makes sense for it."), _react.default.createElement("p", null, "Sentences in English are called Syntax in programing. Let's learn the basics to build a program and then try it on your own."), _react.default.createElement("p", null, _react.default.createElement("h3", null, "Example")), _react.default.createElement("p", null, _react.default.createElement("h3", null, _react.default.createElement("span", {
     className: "function"
-  }, "Function"), " In the example on the right, our funciton is called \"runMixer\". Functions can be called anything but generally follow a pattern of verb and noun."), _react.default.createElement("li", null, _react.default.createElement("b", {
+  }, "runMixer"), _react.default.createElement("span", {
+    className: "parentheses"
+  }, " (", _react.default.createElement("span", {
+    className: "body"
+  }, " 'sugar'"), " ) "), _react.default.createElement("span", {
+    className: "semicolon"
+  }, ";"))), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", {
     className: "function"
+  }, "Function"), " Our funciton is called \"runMixer\". Functions can be called anything but generally follow a pattern of verb and noun."), _react.default.createElement("li", null, _react.default.createElement("b", {
+    className: "parentheses"
   }, "Parentheses"), " This pair goes right next to a function. They might contain additional infomration between them."), _react.default.createElement("li", null, _react.default.createElement("b", {
-    className: "function"
+    className: "semicolon"
   }, ";"), " Semicolon, this piece of punctuation acts like a period and marks the end of a line of code."), _react.default.createElement("li", null, _react.default.createElement("b", {
     className: "body"
   }, "Line of code"), " Instead of sentences, we have lines of code.")), _react.default.createElement(_SortActivity.default, {
@@ -52992,7 +53003,7 @@ var WarmingUp1 = function WarmingUp1() {
     prevLink: "crossingsaftey",
     nextLink: "warmingup2",
     title: "Baking up Code"
-  }, _react.default.createElement("div", null, _react.default.createElement("p", null, "Baking is a great example to help further our understanding of coding."), _react.default.createElement("p", null, "We\u2019re going to learn a few concepts that are building blocks for all coding. Let's look at how we can compare common baking items and terms to our code."), _react.default.createElement(_img.default, {
+  }, _react.default.createElement("div", null, _react.default.createElement("p", null, "Baking is a great example to help further our understanding of codeing."), _react.default.createElement("p", null, "We\u2019re going to learn a few concepts that are building blocks for all coding. Let's look at how we can compare common baking items and terms to our code."), _react.default.createElement(_img.default, {
     name: "cook"
   })));
 };
@@ -53016,7 +53027,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var WarmingUp2 = function WarmingUp2() {
   window.scrollTo(0, 0);
   return _react.default.createElement(_DoubleColumn.default, {
-    asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Things used in Coding"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", null, "Body"), "Code that is needed for the computer to do something like turning on an LED."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Function"), "Takes the body and does something with it. Like a mixer, it needs to be turned on by an event."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Events"), "Something that happens from an input to the computer, like pressing a button."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Event Listeners"), "Listening for when an event happens and then making a function happen."))),
+    asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Things used in Codeing"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", null, "Body"), "Code that is needed for the computer to do something like turning on an LED."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Function"), "Takes the body and does something with it. Like a mixer, it needs to be turned on by an event."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Events"), "Something that happens from an input to the computer, like pressing a button."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Event Listeners"), "Listening for when an event happens and then making a function happen."))),
     prevLink: "warmingup1",
     nextLink: "warmingup3",
     title: "Let\u2019s see how these compare to codeing"
@@ -83969,7 +83980,7 @@ var Bridge1 = function Bridge1() {
     asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Think About It"), _react.default.createElement("p", null, "Image how difficult it would be to need to create the cheese sauce for mac and cheese. Having this made for you makes this dish eaiser and you can still customize it with things like bacon.")),
     prevLink: "warmingupquiz",
     nextLink: "bridge2",
-    title: "Let's get to Coding"
+    title: "Let's get to Codeing"
   }, _react.default.createElement("div", null, _react.default.createElement("p", null, "A computer language tells the computer how to do things inside the computer but usually doesn't know much about the world around it."), _react.default.createElement("p", null, "Thats why people create things called ", _react.default.createElement("b", null, "Libraries"), "."), _react.default.createElement("p", null, "A library is a collection of features pre-built for you. It bridges the gap between the language and the rest of the world."), _react.default.createElement(StyledDiv, null, _react.default.createElement("img", {
     width: "200",
     src: _soupCan.default,
@@ -84014,8 +84025,8 @@ var StyledDiv = (0, _styledComponent.styledComponent)('div', {
 var Bridge1 = function Bridge1() {
   window.scrollTo(0, 0);
   return _react.default.createElement(_DoubleColumn.default, {
-    asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Libraries"), _react.default.createElement("p", null, "Named after real-life ones, libraries make coding easier and fun.")),
-    prevLink: "bridge2",
+    asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Libraries"), _react.default.createElement("p", null, "Named after real-life ones, libraries make codeing easier and fun.")),
+    prevLink: "bridge1",
     nextLink: "coding1",
     title: "Socket.io"
   }, _react.default.createElement(StyledDiv, null, _react.default.createElement("p", null, "Introducing our library ", _react.default.createElement("b", {

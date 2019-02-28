@@ -12,15 +12,21 @@ const StyledDiv = styledComponent('div', {
   '& .body': {
     color: '#4ba24b',
   },
-  '& .function': {
-    color: '#d43fc6',
-  },
   '& .event': {
     color: '#63cef1',
   },
-  '& .eventListener': {
+  '& .semicolon': {
     color: '#e68e4b',
-  }
+  },
+  '& .library': {
+    color: '#5c4ae0',
+  },
+  '& .function': {
+    color: '#2a8d9e',
+  },
+  '& .parentheses': {
+    color: '#c73e5c',
+  },
 });
 
 
@@ -54,7 +60,8 @@ const Sentences = () => {
       asideContent={
       (
         <div>
-         <Icon width="400px" name="structure" />
+          <h1>Function Bodies</h1>
+          <p>A function can take anything but it's not wise. Just like you can throw rocks into a mixer, you won't have one for too long if you do!</p>
         </div>
       )
     }
@@ -64,10 +71,12 @@ const Sentences = () => {
     >
       <p>You've learned that in English we have rules we all follow in order to understand eachother. Programing is similar. Unlike humans though, computers can't ask you, "What did you mean?". This is why it's important what we tell a computer makes sense for it.</p>
       <p>Sentences in English are called Syntax in programing. Let's learn the basics to build a program and then try it on your own.</p>
+      <p><h3>Example</h3></p>
+      <p><h3><span className="function">runMixer</span><span className="parentheses"> (<span className="body"> 'sugar'</span> ) </span><span className="semicolon">;</span></h3></p>
       <ul>
-        <li><b className="function">Function</b> In the example on the right, our funciton is called "runMixer". Functions can be called anything but generally follow a pattern of verb and noun.</li>
-        <li><b className="function">Parentheses</b> This pair goes right next to a function. They might contain additional infomration between them.</li>
-        <li><b className="function">;</b> Semicolon, this piece of punctuation acts like a period and marks the end of a line of code.</li>
+        <li><b className="function">Function</b> Our funciton is called "runMixer". Functions can be called anything but generally follow a pattern of verb and noun.</li>
+        <li><b className="parentheses">Parentheses</b> This pair goes right next to a function. They might contain additional infomration between them.</li>
+        <li><b className="semicolon">;</b> Semicolon, this piece of punctuation acts like a period and marks the end of a line of code.</li>
         <li><b className="body">Line of code</b> Instead of sentences, we have lines of code.</li>
       </ul>
       <SortActivity activityData={activityData} answerKey={['task-1','task-4','task-3','task-2']} />

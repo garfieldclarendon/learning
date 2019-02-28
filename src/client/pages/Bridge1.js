@@ -22,7 +22,7 @@ const Bridge1 = () => {
   }
     prevLink="warmingupquiz"
     nextLink="bridge2"
-    title="Let's get to Coding"
+    title="Let's get to Codeing"
   >
     <div>
       <p>A computer language tells the computer how to do things inside the computer but usually doesn't know much about the world around it.</p>

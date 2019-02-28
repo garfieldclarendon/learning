@@ -24,11 +24,11 @@ const Bridge1 = () => {
     (
       <div>
         <h1>Libraries</h1>
-        <p>Named after real-life ones, libraries make coding easier and fun.</p>
+        <p>Named after real-life ones, libraries make codeing easier and fun.</p>
       </div>
     )
   }
-    prevLink="bridge2"
+    prevLink="bridge1"
     nextLink="coding1"
     title="Socket.io"
   >

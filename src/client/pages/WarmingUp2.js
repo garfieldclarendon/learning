@@ -8,7 +8,7 @@ const WarmingUp2 = () => {
       asideContent={
       (
         <div>
-          <h1>Things used in Coding</h1>
+          <h1>Things used in Codeing</h1>
           <ul>
             <li>
               <b>Body</b>
