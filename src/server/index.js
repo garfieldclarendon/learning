@@ -187,7 +187,7 @@ if (process.env.PRESENTOR) {
             crossingInactive = true;
             clearTimeout(crossingInactiveTimer);
             crossingInactiveTimer = null;
-            socket.emit('photoResistorInactive', 1);
+            socket.emit('setAnOffTimer', 1);
           }, 5000);
         }
       }
@@ -195,8 +195,8 @@ if (process.env.PRESENTOR) {
       photoresistor1.on("data", function() {
         // console.log(this.value);
           if(this.value > 700) {
-            // console.log('gate 1 triggered');
-            socket.emit('photoResistorTriggered', 1);
+            console.log('gate 1 triggered');
+            socket.emit('sensorTriggered', 1);
             // crossingInactivity();
           }
       });
@@ -204,14 +204,14 @@ if (process.env.PRESENTOR) {
       photoresistor2.on("data", function() {
         //console.log(this.value);
         if(this.value > 700) {
-          // console.log('gate 2 triggered');
+          console.log('gate 2 triggered');
           // gateLogic('photoresistor2');
-          socket.emit('photoResistorTriggered', 2);
+          socket.emit('sensorTriggered', 2);
           // crossingInactivity();
         }
       });
 
-      socket.on('triggerEWTrafficLight', () => {
+      socket.on('startLightCycle', () => {
         clearInterval(regularLightCycle);
         regularLightCycle = null;
         console.log('Trigger EW Lights');
@@ -220,7 +220,7 @@ if (process.env.PRESENTOR) {
         }, 15000)
       });
 
-      socket.on('triggerGatesOn', () => {
+      socket.on('turnGatesOn', () => {
         console.log("Gates on");
         crossingInactivity();
         crossingGates();
@@ -236,7 +236,7 @@ if (process.env.PRESENTOR) {
         allRedLights(EWLights);
       });
 
-      socket.on('triggerGatesOff', () => {
+      socket.on('turnGatesOff', () => {
         turnOffGates();
       });
 

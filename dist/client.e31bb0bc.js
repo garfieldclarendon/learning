@@ -53003,7 +53003,7 @@ var WarmingUp1 = function WarmingUp1() {
     prevLink: "crossingsaftey",
     nextLink: "warmingup2",
     title: "Baking up Code"
-  }, _react.default.createElement("div", null, _react.default.createElement("p", null, "Baking is a great example to help further our understanding of codeing."), _react.default.createElement("p", null, "We\u2019re going to learn a few concepts that are building blocks for all coding. Let's look at how we can compare common baking items and terms to our code."), _react.default.createElement(_img.default, {
+  }, _react.default.createElement("div", null, _react.default.createElement("p", null, "Baking is a great example to help further our understanding of coding."), _react.default.createElement("p", null, "We\u2019re going to learn a few concepts that are building blocks for all coding. Let's look at how we can compare common baking items and terms to our code."), _react.default.createElement(_img.default, {
     name: "cook"
   })));
 };
@@ -53027,10 +53027,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var WarmingUp2 = function WarmingUp2() {
   window.scrollTo(0, 0);
   return _react.default.createElement(_DoubleColumn.default, {
-    asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Things used in Codeing"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", null, "Body"), "Code that is needed for the computer to do something like turning on an LED."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Function"), "Takes the body and does something with it. Like a mixer, it needs to be turned on by an event."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Events"), "Something that happens from an input to the computer, like pressing a button."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Event Listeners"), "Listening for when an event happens and then making a function happen."))),
+    asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Things used in Coding"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", null, "Body"), "Code that is needed for the computer to do something like turning on an LED."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Function"), "Takes the body and does something with it. Like a mixer, it needs to be turned on by an event."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Events"), "Something that happens from an input to the computer, like pressing a button."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Event Listeners"), "Listening for when an event happens and then making a function happen."))),
     prevLink: "warmingup1",
     nextLink: "warmingup3",
-    title: "Let\u2019s see how these compare to codeing"
+    title: "Let\u2019s see how these compare to coding"
   }, _react.default.createElement("div", {
     className: "compareToBox"
   }, _react.default.createElement("h1", null, "Things used in Baking"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("b", null, "Ingredients"), "Butter, eggs, milk, etc. are all pieces used to create something bigger, a cookie!"), _react.default.createElement("li", null, _react.default.createElement("b", null, "Mixer"), "All our ingredients need to be combined and mixed to make our cookie."), _react.default.createElement("li", null, _react.default.createElement("b", null, "Events"), "Putting the cookies into the oven, setting a timer, having the timer go off."), _react.default.createElement("li", null, _react.default.createElement("b", null, "(ears to) Listen"), "You need to set a timer to know when to take the cookies out."))));
@@ -53679,15 +53679,22 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(WarmingUpQuiz).call(this, props));
 
     _defineProperty(_assertThisInitialized(_this), "enableNext", function () {
-      return setTimeout(function () {
-        this.setState({
-          done: true
+      if (!_this.state.setTimeout) {
+        _this.setState({
+          setTimeout: true
         });
-      }.bind(_assertThisInitialized(_this)), 180000);
+
+        setTimeout(function () {
+          this.setState({
+            done: true
+          });
+        }.bind(_assertThisInitialized(_this)), 70000);
+      }
     });
 
     _this.state = {
-      done: false
+      done: false,
+      setTimeout: false
     };
     return _this;
   }
@@ -83353,7 +83360,7 @@ var Coding1 = function Coding1() {
     asideContent: _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("h1", null, "Code Example Bank"), _react.default.createElement(_CodeEditor.default, {
       height: "330px",
       width: "350px",
-      code: "socket.on('sensorTriggered', () => {\n    // Something happens here whenever any sensor is triggered\n});\n\nio.emit('turnGatesOn');\n\nio.emit('turnGatesOff');"
+      code: "socket.on('sensorTriggered', () => {\n    // Something happens here whenever any sensor is triggered\n});\n\nsocket.emit('turnGatesOn');\n\nsocket.emit('turnGatesOff');"
     })),
     prevLink: "bridge2",
     nextLink: "coding2",
@@ -83400,7 +83407,7 @@ var Coding2 = function Coding2() {
     asideContent: _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("h1", null, "Code Example Bank"), _react.default.createElement(_CodeEditor.default, {
       height: "330px",
       width: "350px",
-      code: "socket.on('sensorTriggered', () => {\n    // Something happens here whenever any sensor is triggered\n});\n\nio.emit('turnGatesOn');\n\nio.emit('turnGatesOff');\n\n// in seconds\nsleep(5);\n"
+      code: "socket.on('sensorTriggered', () => {\n    // Something happens here whenever any sensor is triggered\n});\n\nsocket.emit('turnGatesOn');\n\nsocket.emit('turnGatesOff');\n\n// in seconds\nsleep(5);\n"
     })),
     prevLink: "coding1",
     nextLink: "coding3",
@@ -83409,7 +83416,7 @@ var Coding2 = function Coding2() {
       showButton: true,
       height: "350px",
       width: "350px",
-      code: "socket.on('sensorTriggered', () => {\n    io.emit('turnGatesOn');\n});"
+      code: "socket.on('sensorTriggered', () => {\n    socket.emit('turnGatesOn');\n});"
     }))
   }, _react.default.createElement("p", null, "Uh oh! Drivers are reporting that the gates are never going up!"), _react.default.createElement("h2", null, "How can we get the gates and lights to go up after the train has left?")));
 };
@@ -83447,7 +83454,7 @@ var Coding3 = function Coding3() {
     asideContent: _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("h1", null, "Code Example Bank"), _react.default.createElement(_CodeEditor.default, {
       height: "330px",
       width: "350px",
-      code: "socket.on('sensorTriggered', () => {\n    // Something happens here whenever any sensor is triggered\n});\n\nio.emit('turnGatesOn');\n\nio.emit('turnGatesOff');\n\n// in seconds\nsleep(5);\n\nsocket.on('sensorInactiveTriggered', () => {\n// Something happens here whenever the sensor is inactive for 5 seconds\n});\n\n"
+      code: "socket.on('sensorTriggered', () => {\n    // Something happens here whenever any sensor is triggered\n});\n\nsocket.emit('turnGatesOn');\n\nsocket.emit('turnGatesOff');\n\n// in seconds\nsleep(5);\n\nsocket.on('setAnOffTimer', () => {\n// Something happens here whenever the sensor is inactive for 5 seconds\n});\n\n"
     })),
     prevLink: "Coding2",
     nextLink: "Coding4",
@@ -83456,7 +83463,7 @@ var Coding3 = function Coding3() {
       showButton: true,
       height: "350px",
       width: "350px",
-      code: "socket.on('sensorTriggered', () => {\n    io.emit('turnGatesOn');\n    sleep(5);\n    io.emit('turnGatesOff');\n});"
+      code: "socket.on('sensorTriggered', () => {\n    socket.emit('turnGatesOn');\n    sleep(5);\n    socket.emit('turnGatesOff');\n});"
     }))
   }, _react.default.createElement("p", null, "Hum, sometimes the gates are going up while a train is still there! We can\u2019t have that."), _react.default.createElement("h2", null, "How can we get the gates to ONLY go up AFTER the train is not on the crossing?")));
 };
@@ -83494,7 +83501,7 @@ var Coding4 = function Coding4() {
     asideContent: _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("h1", null, "Code Example Bank"), _react.default.createElement(_CodeEditor.default, {
       height: "330px",
       width: "350px",
-      code: "socket.on('sensorTriggered', () => {\n    // Something happens here whenever any sensor is triggered\n});\n\nio.emit('turnGatesOn');\n\nio.emit('turnGatesOff');\n\n// in seconds\nsleep(5);\n\n// Make lights all go red\nio.emit('stopLightCycle');\n"
+      code: "socket.on('sensorTriggered', () => {\n    // Something happens here whenever any sensor is triggered\n});\n\nsocket.emit('turnGatesOn');\n\nsocket.emit('turnGatesOff');\n\n// in seconds\nsleep(5);\n\n// Make lights all go red\nsocket.emit('stopLightCycle');\n"
     })),
     prevLink: "Coding3",
     nextLink: "Coding5",
@@ -83503,7 +83510,7 @@ var Coding4 = function Coding4() {
       showButton: true,
       height: "350px",
       width: "350px",
-      code: "socket.on('sensorTriggered', () => {\n    io.emit('turnGatesOn');\n});\n\nsocket.on('sensorInactiveTriggered', () => {\n    io.emit('turnGatesOff');\n});"
+      code: "socket.on('sensorTriggered', () => {\n    socket.emit('turnGatesOn');\n});\n\nsocket.on('setAnOffTimer', () => {\n    socket.emit('turnGatesOff');\n});"
     }))
   }, _react.default.createElement("p", null, "The traffic light is not synced up with the railroad crossing."), _react.default.createElement("h2", null, "How can we make this safer? Specifically, how can we make the traffic light red when there is a train crossing?")));
 };
@@ -83541,7 +83548,7 @@ var Coding5 = function Coding5() {
     asideContent: _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("h1", null, "Code Example Bank"), _react.default.createElement(_CodeEditor.default, {
       height: "330px",
       width: "350px",
-      code: "socket.on('sensorTriggered', () => {\n    // Something happens here whenever any sensor is triggered\n});\n\nio.emit('turnGatesOn');\n\nio.emit('turnGatesOff');\n\n// in seconds\nsleep(5);\n\n// Make lights all go red\nio.emit('stopLightCycle');\n\n// Resume light cycle\nio.emit('startLightCycle');\n"
+      code: "socket.on('sensorTriggered', () => {\n    // Something happens here whenever any sensor is triggered\n});\n\nsocket.emit('turnGatesOn');\n\nsocket.emit('turnGatesOff');\n\n// in seconds\nsleep(5);\n\n// Make lights all go red\nsocket.emit('stopLightCycle');\n\n// Resume light cycle\nsocket.emit('startLightCycle');\n"
     })),
     prevLink: "Coding4",
     nextLink: "wrappinpup",
@@ -83550,7 +83557,7 @@ var Coding5 = function Coding5() {
       showButton: true,
       height: "350px",
       width: "350px",
-      code: "socket.on('sensorTriggered', () => {\n    io.emit('turnGatesOn');\n});\n\nsocket.on('sensorInactiveTriggered', () => {\n    io.emit('turnGatesOff');\n});\nio.emit('stopLightCycle');\n"
+      code: "socket.on('sensorTriggered', () => {\n    socket.emit('turnGatesOn');\n});\n\nsocket.on('setAnOffTimer', () => {\n    socket.emit('turnGatesOff');\n});\nsocket.emit('stopLightCycle');\n"
     }))
   }, _react.default.createElement("p", null, "The traffic light is not synced up with the railroad crossing."), _react.default.createElement("h2", null, "When the train leaves, the lights never turn green!")));
 };
@@ -83980,7 +83987,7 @@ var Bridge1 = function Bridge1() {
     asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Think About It"), _react.default.createElement("p", null, "Image how difficult it would be to need to create the cheese sauce for mac and cheese. Having this made for you makes this dish eaiser and you can still customize it with things like bacon.")),
     prevLink: "warmingupquiz",
     nextLink: "bridge2",
-    title: "Let's get to Codeing"
+    title: "Let's get to Coding"
   }, _react.default.createElement("div", null, _react.default.createElement("p", null, "A computer language tells the computer how to do things inside the computer but usually doesn't know much about the world around it."), _react.default.createElement("p", null, "Thats why people create things called ", _react.default.createElement("b", null, "Libraries"), "."), _react.default.createElement("p", null, "A library is a collection of features pre-built for you. It bridges the gap between the language and the rest of the world."), _react.default.createElement(StyledDiv, null, _react.default.createElement("img", {
     width: "200",
     src: _soupCan.default,
@@ -84025,7 +84032,7 @@ var StyledDiv = (0, _styledComponent.styledComponent)('div', {
 var Bridge1 = function Bridge1() {
   window.scrollTo(0, 0);
   return _react.default.createElement(_DoubleColumn.default, {
-    asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Libraries"), _react.default.createElement("p", null, "Named after real-life ones, libraries make codeing easier and fun.")),
+    asideContent: _react.default.createElement("div", null, _react.default.createElement("h1", null, "Libraries"), _react.default.createElement("p", null, "Named after real-life ones, libraries make coding easier and fun.")),
     prevLink: "bridge1",
     nextLink: "coding1",
     title: "Socket.io"
@@ -85920,7 +85927,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55701" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63890" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

@@ -19,7 +19,7 @@ const WarmingUp1 = () => {
     title="Baking up Code"
   >
     <div>
-      <p>Baking is a great example to help further our understanding of codeing.</p>
+      <p>Baking is a great example to help further our understanding of coding.</p>
       <p>We’re going to learn a few concepts that are building blocks for all coding. Let's look at how we can compare common baking items and terms to our code.</p>
       <Icon name="cook" />
     </div>

@@ -74,18 +74,23 @@ export default class WarmingUpQuiz extends React.Component {
     super(props);
     this.state = {
       done: false,
+      setTimeout: false,
     }
   };
 
   // This is very hacky but there is no completion event for the quiz
-  enableNext = () =>
-    setTimeout(
-      function() {
-          this.setState({done: true});
-      }
-      .bind(this),
-      180000
-    );
+  enableNext = () => {
+    if (!this.state.setTimeout) {
+      this.setState({setTimeout: true});
+      setTimeout(
+        function() {
+            this.setState({done: true});
+        }
+        .bind(this),
+        70000
+      );
+    }
+  }
 
   render() {
     window.scrollTo(0, 0);

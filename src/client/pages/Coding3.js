@@ -26,14 +26,14 @@ const Coding3 = () => (
     // Something happens here whenever any sensor is triggered
 });
 
-io.emit('turnGatesOn');
+socket.emit('turnGatesOn');
 
-io.emit('turnGatesOff');
+socket.emit('turnGatesOff');
 
 // in seconds
 sleep(5);
 
-socket.on('sensorInactiveTriggered', () => {
+socket.on('setAnOffTimer', () => {
 // Something happens here whenever the sensor is inactive for 5 seconds
 });
 
@@ -54,9 +54,9 @@ socket.on('sensorInactiveTriggered', () => {
               height="350px"
               width="350px"
               code={`socket.on('sensorTriggered', () => {
-    io.emit('turnGatesOn');
+    socket.emit('turnGatesOn');
     sleep(5);
-    io.emit('turnGatesOff');
+    socket.emit('turnGatesOff');
 });`}
             />
           </CenterStyled>

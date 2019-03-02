@@ -8,7 +8,7 @@ const WarmingUp2 = () => {
       asideContent={
       (
         <div>
-          <h1>Things used in Codeing</h1>
+          <h1>Things used in Coding</h1>
           <ul>
             <li>
               <b>Body</b>
@@ -32,7 +32,7 @@ const WarmingUp2 = () => {
     }
       prevLink="warmingup1"
       nextLink="warmingup3"
-      title="Let’s see how these compare to codeing"
+      title="Let’s see how these compare to coding"
     >
       <div className="compareToBox">
         <h1>Things used in Baking</h1>

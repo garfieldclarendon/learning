@@ -36,11 +36,11 @@ socket.on('photoResistorTriggered', function (data) {
   <script src="/site.229568d1.js"></script><script src="/typography.6633f327.js"></script><link rel="stylesheet" href="/client.e31bb0bc.css"></head>
   <body>
     <textarea style="display: none" id="cnsl">
-        socket.emit('triggerEWTrafficLight');
+        socket.emit('startLightCycle');
         socket.on('photoResistorTriggered', () => {
           socket.emit('triggerGatesOn');
         });
-        socket.on('photoResistorInactive', () => {
+        socket.on('sensorTriggered', () => {
           socket.emit('triggerGatesOff');
         });
     </textarea>

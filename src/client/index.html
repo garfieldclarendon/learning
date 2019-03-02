@@ -35,11 +35,11 @@
   </head>
   <body>
     <textarea style="display: none" id="cnsl">
-        socket.emit('triggerEWTrafficLight');
+        socket.emit('startLightCycle');
         socket.on('photoResistorTriggered', () => {
           socket.emit('triggerGatesOn');
         });
-        socket.on('photoResistorInactive', () => {
+        socket.on('sensorTriggered', () => {
           socket.emit('triggerGatesOff');
         });
     </textarea>

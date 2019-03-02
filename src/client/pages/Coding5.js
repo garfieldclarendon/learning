@@ -26,18 +26,18 @@ const Coding5 = () => (
     // Something happens here whenever any sensor is triggered
 });
 
-io.emit('turnGatesOn');
+socket.emit('turnGatesOn');
 
-io.emit('turnGatesOff');
+socket.emit('turnGatesOff');
 
 // in seconds
 sleep(5);
 
 // Make lights all go red
-io.emit('stopLightCycle');
+socket.emit('stopLightCycle');
 
 // Resume light cycle
-io.emit('startLightCycle');
+socket.emit('startLightCycle');
 `}
           />
         </React.Fragment>
@@ -55,13 +55,13 @@ io.emit('startLightCycle');
               height="350px"
               width="350px"
               code={`socket.on('sensorTriggered', () => {
-    io.emit('turnGatesOn');
+    socket.emit('turnGatesOn');
 });
 
-socket.on('sensorInactiveTriggered', () => {
-    io.emit('turnGatesOff');
+socket.on('setAnOffTimer', () => {
+    socket.emit('turnGatesOff');
 });
-io.emit('stopLightCycle');
+socket.emit('stopLightCycle');
 `}
             />
           </CenterStyled>

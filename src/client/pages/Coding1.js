@@ -28,9 +28,9 @@ const Coding1 = () => {
     // Something happens here whenever any sensor is triggered
 });
 
-io.emit('turnGatesOn');
+socket.emit('turnGatesOn');
 
-io.emit('turnGatesOff');`}
+socket.emit('turnGatesOff');`}
           />
         </React.Fragment>
       )
